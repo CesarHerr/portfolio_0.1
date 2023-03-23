@@ -34,7 +34,7 @@
 # 📖 [Portfolio] <a name="about-project"></a>
 
 
-**[Portfolio]** In this portfolio, you can find the work that I have been developing throughout my learning experience, and you can also find my contact information.
+**[Portfolio]** In this portfolio, you can find the work that I have been developing throughout my learning experience, and you can also find my contact information. In this time I started creating the toolbar and headlines sections, for the mobile version.
 
 ## 🛠 Built With <a name="built-with"></a>
 
