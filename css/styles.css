@@ -16,23 +16,22 @@ body {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background: #3c3a39;
-  height: 92px;
-  min-width: 375px;
+  height: 52px;
 }
 
 .logo-header {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 18px;
-  top: 56px;
+  text-decoration: none;
 }
 
 nav button {
   background: none;
   border: none;
   position: relative;
-  top: 62px;
   right: 35px;
 }
 
