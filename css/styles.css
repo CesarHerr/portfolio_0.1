@@ -5,7 +5,7 @@
 ::after {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;    
+  padding: 0;
 }
 
 body {
@@ -16,7 +16,7 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  background: #3C3A39;   
+  background: #3c3a39;
   height: 92px;
   min-width: 375px;
 }
@@ -26,7 +26,7 @@ header {
   font-weight: 700;
   font-size: 18px;
   top: 56px;
-  }
+}
 
 nav button {
   background: none;
@@ -37,31 +37,31 @@ nav button {
 }
 
 .headline {
-  background-color: #1C1A19;
+  background-color: #1c1a19;
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 590px;
   overflow: hidden;
-
 }
 
 .logo-header,
 .subtitle-headline,
-.description-headline, 
+.description-headline,
 .social-btn {
-  color: #FFFFFF;
+  color: #fff;
   position: relative;
   left: 24px;
 }
 
 .title-headline {
   position: relative;
-  color: #FF6B00;
+  color: #ff6b00;
   font-family: 'Crete Round', serif;
   font-size: 42px;
   left: 24px;
 }
+
 .subtitle-headline {
   font-family: 'Roboto', sans-serif;
   font-size: 24px;
@@ -69,9 +69,30 @@ nav button {
 }
 
 .description-headline {
-  font-family: 'Poppins', sans-serif; 
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
-  width:80%;
-  }
+  width: 80%;
+}
 
- 
+.social-btn button {
+  background: none;
+  border: none;
+}
+
+.social-btn {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+}
+
+nav button:hover,
+.social-btn button:hover {
+  cursor: pointer;
+}
+
+.headline > img {
+  position: fixed;
+  align-self: flex-end;
+  justify-self: flex-end;
+  bottom: 0;
+}
