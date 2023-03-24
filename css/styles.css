@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500&family=Poppins&family=Roboto:wght@500&display=swap');
 
 *,
 ::before,
@@ -9,6 +9,7 @@
 }
 
 h1,
+h2,
 h3 {
   font-weight: normal;
 }
@@ -33,20 +34,20 @@ header {
   text-decoration: none;
 }
 
-nav button {
+.hamburger-btn {
   background: none;
   border: none;
   position: relative;
   right: 35px;
 }
 
-nav button:hover {
+.hamburger-btn:hover {
   cursor: pointer;
 }
 
 .headline {
   background-color: #1c1a19;
-  background-image: url(/images/Group.svg);
+  background-image: url(../images/Group.svg);
   background-repeat: no-repeat;
   background-position: 100% 115%;
   display: flex;
