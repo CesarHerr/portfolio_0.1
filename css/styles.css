@@ -11,7 +11,7 @@
 h1,
 h2,
 h3 {
-  font-weight: normal;
+  font-weight: unset;
 }
 
 @media only screen and (min-width: 375px) and (max-width: 768px) {
@@ -90,7 +90,7 @@ h3 {
 
   .works {
     display: grid;
-    grid-template: 880px 642px / 367px;
+    grid-template: 880px repeat(6, 422px) / 367px;
     justify-content: center;
   }
 
@@ -125,6 +125,7 @@ h3 {
   .works-header p {
     font-family: 'Inter', sans-serif;
     font-size: 17px;
+    line-height: 1.5rem;
   }
 
   .works-header ul {
@@ -144,12 +145,69 @@ h3 {
   }
 
   #submit-header {
-    width: 140px;
-    padding: 12px;
+    width: 40%;
+    padding: 14px 5px;
+    border: none;
+    background-color: #ff6b00;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    font-size: 20px;
+    align-self: flex-start;
+  }
+
+  .works-body {
+    background-image: url(../images/image1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  .works-body h3 {
+    position: relative;
+    top: 85px;
+    font-family: 'Crete Round', serif;
+    font-size: 35px;
+    align-self: flex-start;
+    color: #fff;
+  }
+
+  .works-body p {
+    width: 90%;
+    margin-top: 75px;
+    align-self: flex-start;
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    line-height: 1.6rem;
+    color: #fff;
+  }
+
+  .works-body ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 75%;
+    align-self: flex-start;
+  }
+
+  .works-body-btn {
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    background: #ffffff3d;
+    border: none;
+    padding: 10px 12px;
+    color: #fff;
+  }
+
+  .works-body-btn-submit {
+    width: calc(100% + 20px);
+    padding: 15px;
     border: none;
     background-color: #ff6b00;
     color: #fff;
-    font-size: 17px;
-    align-self: flex-start;
+    font-size: 20px;
   }
 }
