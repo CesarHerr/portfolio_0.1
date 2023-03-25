@@ -6,12 +6,17 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Inter', sans-serif;
 }
 
 h1,
 h2,
 h3 {
   font-weight: unset;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 375px) and (max-width: 768px) {
@@ -24,7 +29,7 @@ h3 {
   }
 
   .logo-header {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 18px;
     text-decoration: none;
@@ -92,6 +97,7 @@ h3 {
     display: grid;
     grid-template: 880px repeat(6, 422px) / 367px;
     justify-content: center;
+    margin-bottom: 120px;
   }
 
   .works-header {
@@ -123,7 +129,6 @@ h3 {
   }
 
   .works-header p {
-    font-family: 'Inter', sans-serif;
     font-size: 17px;
     line-height: 1.5rem;
   }
@@ -136,7 +141,6 @@ h3 {
   }
 
   .works-header-btn {
-    font-family: 'Inter', sans-serif;
     font-size: 17px;
     background: none;
     border: solid 1px #8993a4;
@@ -144,12 +148,11 @@ h3 {
     font-weight: 600;
   }
 
-  #submit-header {
+  #see-project-header {
     width: 40%;
     padding: 14px 5px;
     border: none;
     background-color: #ff6b00;
-    font-family: 'Inter', sans-serif;
     color: #fff;
     font-size: 20px;
     align-self: flex-start;
@@ -179,7 +182,6 @@ h3 {
     width: 90%;
     margin-top: 75px;
     align-self: flex-start;
-    font-family: 'Inter', sans-serif;
     font-size: 17px;
     line-height: 1.6rem;
     color: #fff;
@@ -194,7 +196,6 @@ h3 {
   }
 
   .works-body-btn {
-    font-family: 'Inter', sans-serif;
     font-size: 17px;
     background: #ffffff3d;
     border: none;
@@ -209,5 +210,80 @@ h3 {
     background-color: #ff6b00;
     color: #fff;
     font-size: 20px;
+  }
+
+  .about {
+    display: grid;
+    grid-template: 682px 1220px/ 367px;
+    justify-content: center;
+    background-image: url(../images/Group2.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 25%;
+    background-color: #1c1a19;
+  }
+
+  .about-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 10px;
+    border-bottom: solid 2px #fff;
+  }
+
+  .about-head h2 {
+    position: relative;
+    top: 45px;
+    color: #ff6b00;
+    font-family: 'Crete Round', serif;
+    font-size: 78px;
+  }
+
+  .about-body ul p {
+    font-size: 1.4rem;
+    padding: 22px 0;
+    color: #fff;
+  }
+
+  .about .about-head p {
+    position: relative;
+    top: -55px;
+    margin-bottom: 20px;
+    align-self: flex-start;
+    font-size: 16px;
+    line-height: 1.6rem;
+    color: #fff;
+  }
+
+  .about-btn {
+    position: relative;
+    top: -155px;
+    width: 50%;
+    padding: 13px 5px;
+    border: none;
+    background-color: #ff6b00;
+    color: #fff;
+    font-size: 18px;
+    align-self: flex-start;
+  }
+
+  .about-body {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-body ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-body ul h3 {
+    font-size: 1.9rem;
+    font-weight: 500;
+    display: inline;
+    color: #fff;
   }
 }
