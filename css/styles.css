@@ -15,10 +15,6 @@ h3 {
   font-weight: unset;
 }
 
-button:hover {
-  cursor: pointer;
-}
-
 @media only screen and (min-width: 375px) and (max-width: 768px) {
   header {
     display: flex;
@@ -106,6 +102,7 @@ button:hover {
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
+    margin-bottom: 20px;
   }
 
   .works-header h2 {
@@ -140,15 +137,26 @@ button:hover {
     width: 100%;
   }
 
-  .works-header-btn {
+  .works-body p {
+    width: 90%;
+    margin-top: 55px;
+    align-self: flex-start;
     font-size: 17px;
-    background: none;
+    line-height: 1.6rem;
+    color: #fff;
+  }
+
+  .works-header ul p {
     border: solid 1px #8993a4;
     padding: 10px 12px;
     font-weight: 600;
   }
 
-  #see-project-header {
+  .see-btn {
+    transition-duration: 0.5s;
+  }
+
+  .works-header .see-btn {
     width: 40%;
     padding: 14px 5px;
     border: none;
@@ -171,19 +179,10 @@ button:hover {
 
   .works-body h3 {
     position: relative;
-    top: 85px;
+    top: 75px;
     font-family: 'Crete Round', serif;
     font-size: 35px;
     align-self: flex-start;
-    color: #fff;
-  }
-
-  .works-body p {
-    width: 90%;
-    margin-top: 75px;
-    align-self: flex-start;
-    font-size: 17px;
-    line-height: 1.6rem;
     color: #fff;
   }
 
@@ -195,15 +194,15 @@ button:hover {
     align-self: flex-start;
   }
 
-  .works-body-btn {
-    font-size: 17px;
+  .works-body ul p {
+    display: inline;
     background: #ffffff3d;
     border: none;
     padding: 10px 12px;
     color: #fff;
   }
 
-  .works-body-btn-submit {
+  .works-body .see-btn {
     width: calc(100% + 20px);
     padding: 15px;
     border: none;
@@ -255,7 +254,7 @@ button:hover {
     color: #fff;
   }
 
-  .about-btn {
+  .about-head .see-btn {
     position: relative;
     top: -155px;
     width: 50%;
@@ -285,5 +284,18 @@ button:hover {
     font-weight: 500;
     display: inline;
     color: #fff;
+  }
+
+  .see-btn:hover {
+    cursor: pointer;
+    color: #f55800;
+    font-weight: bold;
+    background-color: #fff5e1;
+    border: solid 1px #f55800;
+  }
+
+  .see-btn:active {
+    background-color: #e05304;
+    color: #f4f1f0;
   }
 }
