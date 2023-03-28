@@ -317,10 +317,10 @@ h3 {
   }
 
   .contact_title {
-    margin: 69px 5% 60px 5%;    
+    margin: 69px 5% 60px 5%;
     flex-wrap: wrap;
     width: 90%;
-    height: 216px;    
+    height: 216px;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -347,7 +347,7 @@ h3 {
     margin-bottom: 10px;
   }
 
-  form textarea {   
+  form textarea {
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
