@@ -317,14 +317,10 @@ h3 {
   }
 
   .contact_title {
-    margin: 69px 5% 60px 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 69px 5% 60px 5%;    
     flex-wrap: wrap;
     width: 90%;
-    height: 216px;
-    font-family: 'Inter', sans-serif;
+    height: 216px;    
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -351,8 +347,7 @@ h3 {
     margin-bottom: 10px;
   }
 
-  form textarea {
-    font-family: 'Inter', sans-serif;
+  form textarea {   
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
