@@ -463,20 +463,24 @@ h3 {
 
   .works {
   display: inline;
-  }
+  background-color: #e05304;  
+  } 
 
-  .works-header {
-    margin: 0 6%;
+  .works-header {  
+    margin: 0 10%; 
     display: grid;
-    grid-template:  repeat(11, 58px) / 35% 25% 40% ;     
+    grid-template:  repeat(11, 58px) / 35% 25% 40% ;   
+    margin-bottom: 80px; 
+
   }
 
-  .title-works-desktop {
-    grid-area: 1 / 1 / 5  / 4; 
+  .title-works-desktop {   
+    grid-area: 1 / 1 / 4  / 4; 
     width: 100%;        
   }
 
   .title-works-desktop h2 {    
+    
     border: none;   
     margin-top: 100px; 
     margin-right: 5%; 
@@ -484,7 +488,7 @@ h3 {
   }  
 
   .title-works-desktop .work-line {
-   margin-top: 50px;   
+   margin-top: 50px;    
    justify-content: flex-end;
    width: 90%;   
    overflow: hidden;
@@ -494,18 +498,18 @@ h3 {
     display: none;
   }
 
-  .works-img-full {    
-    margin-top: 150px;
-    grid-area: 5 / 1 / 11 / 3; 
-    width: 95%;  
-  }
+  .works-img-full {     
+    grid-area: 7 / 1 / 11 / 3; 
+    width: 95%;    
+    background-color: #e05304;         
+   }
  
-  .works-header h3 {
+  .works-header h3 {    
     grid-area: 5 / 3 / 6 / 4;
     min-width: 290px;
   }
 
-  .works-header > p {
+  .works-header > p {    
     margin-top: 20%;
     height: 140px;
     grid-area: 5 / 3 / 8 / 4;   
@@ -522,7 +526,78 @@ h3 {
     grid-area: 10 / 3 / 12 / 4;
     width: 150px;
     margin-top: 30px;
+  } 
+
+  .works-body {
+    width: 25%;
+    height: 465px;
+    position: relative;
+    float: left; 
+    margin: 0.8%;      
+    min-width: 310px;
+    margin-bottom: 20px;
+  }
+
+  #works-body-first, #works-body-4 {
+    margin-left: 10%
+  }
+
+  @media only screen and (max-width:1075px){
+   #works-body-3, #works-body-first, #works-body-5 {
+    margin-left: 15%;
+   }
+
+   #works-body-4 {
+    margin-left: 0.8%;
+   }
+  }
+
+  .about {
+    margin-top: 1200px;
+    display: flex;    
+    flex-wrap: wrap;
+    height: 900px;
+    clear: both;
+    background-image: url(../images/ImageAbout.png);
+    background-size: 50%;
+    background-position: 100% 18%;
+  } 
+  
+  .about-head {
+    margin: 0 10%;
+    width: 85%;    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:space-around;
+    height: 650px;
+  }
+  
+  .about-head h2 {
+    font-size: 5rem;
+  }
+
+  .about-head p {
+    width: 45%;
+    min-width: 300px;
+    font-size: 1.3rem !important;
     
+  }
+
+  .about-head .see-btn {
+    width: 17%;
+    min-width: 150px;
+   
+  }
+
+  .about-body {
+    width: 100%;
+    background-color: #e05304;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   
 }
 
