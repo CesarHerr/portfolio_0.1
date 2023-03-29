@@ -164,6 +164,16 @@ You can deploy this project using:
 - Twitter: [@Cesarherr2](https://twitter.com/Cesarherr2)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/cesarherr/)
 
+**Collaborators**
+
+👤 **Gerson Higgins**
+
+- GitHub: [@gersongahg](https://github.com/gersongahg)
+
+👤 **Matembe Benjamin**
+
+- GitHub: [@BenjaminMatembe](https://github.com/BenjaminMatembe)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
