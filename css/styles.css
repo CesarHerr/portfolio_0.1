@@ -5,7 +5,10 @@
 ::after {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 0;  
+}
+
+html {
   font-family: 'Inter', sans-serif;
 }
 
@@ -15,7 +18,6 @@ h3 {
   font-weight: unset;
 }
 
-@media only screen and (min-width: 375px) and (max-width: 768px) {
   .flex-row {
     display: flex;
   }
@@ -392,3 +394,135 @@ h3 {
 
   footer {
     height: 90px;
+  }
+
+  @media only screen and (max-width: 768px){
+  nav ul li, .work-line, .works-img-full {
+    display: none
+  }
+
+  
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    height: 72px;
+    padding: 0 5%;
+  }
+
+  .hamburger-btn {
+    display: none;
+  }
+
+  header nav {
+    width: 30%;
+    min-width: 240px;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    color: #fff;
+    font-weight: 600;
+    align-items: center;   
+  }
+
+  .headline {
+    background-image: url(../images/Illustration-header.svg);
+    background-position: 100%;
+    background-size: 35%;
+    height: 700px;
+  }
+  
+  .headline div {
+    margin-left: 140px
+  }
+
+  .description-headline p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3rem;
+  }
+  
+  .social-link {
+   
+    display: inline;
+    float: left;
+    bottom: 35%;   
+    margin-left: 20px ;
+  }
+
+  .social-link img {
+    margin-bottom: 12px;
+    height: 1.2rem;    
+  }
+ 
+  .description-headline {
+    width: 40%;    
+  }
+
+  .works {
+  display: inline;
+  }
+
+  .works-header {
+    margin: 0 6%;
+    display: grid;
+    grid-template:  repeat(11, 58px) / 35% 25% 40% ;     
+  }
+
+  .title-works-desktop {
+    grid-area: 1 / 1 / 5  / 4; 
+    width: 100%;        
+  }
+
+  .title-works-desktop h2 {    
+    border: none;   
+    margin-top: 100px; 
+    margin-right: 5%; 
+    min-width: 350px;  
+  }  
+
+  .title-works-desktop .work-line {
+   margin-top: 50px;   
+   justify-content: flex-end;
+   width: 90%;   
+   overflow: hidden;
+  }
+
+  .works-img {
+    display: none;
+  }
+
+  .works-img-full {    
+    margin-top: 150px;
+    grid-area: 5 / 1 / 11 / 3; 
+    width: 95%;  
+  }
+ 
+  .works-header h3 {
+    grid-area: 5 / 3 / 6 / 4;
+    min-width: 290px;
+  }
+
+  .works-header > p {
+    margin-top: 20%;
+    height: 140px;
+    grid-area: 5 / 3 / 8 / 4;   
+    min-width: 290px;      
+  }
+ 
+  .works-header ul {
+    grid-area: 9 / 3 / 10 / 4;
+    justify-content: space-between;
+    width: 70%;
+  }
+  
+  .works-header > .see-btn {
+    grid-area: 10 / 3 / 12 / 4;
+    width: 150px;
+    margin-top: 30px;
+    
+  
+}
+
