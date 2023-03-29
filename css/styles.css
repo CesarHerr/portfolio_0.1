@@ -16,8 +16,16 @@ h3 {
 }
 
 @media only screen and (min-width: 375px) and (max-width: 768px) {
-  header {
+  .flex-row {
     display: flex;
+  }
+
+  .flex-col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
     justify-content: space-between;
     align-items: center;
     background: #3c3a39;
@@ -47,8 +55,6 @@ h3 {
     background-image: url(../images/Group.svg);
     background-repeat: no-repeat;
     background-position: 100% 115%;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     height: 590px;
     overflow: hidden;
@@ -83,7 +89,6 @@ h3 {
   }
 
   .social-link {
-    display: flex;
     justify-content: space-around;
     width: 55%;
     list-style: none;
@@ -97,8 +102,6 @@ h3 {
   }
 
   .works-header {
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
@@ -132,10 +135,10 @@ h3 {
   form ul {
     list-style: none;
     width: 100%;
+    padding: 0 15px;
   }
 
   footer ul {
-    display: flex;
     list-style: none;
     justify-content: center;
     margin-top: 14px;
@@ -143,7 +146,6 @@ h3 {
   }
 
   .works-header ul {
-    display: flex;
     justify-content: space-between;
     list-style: none;
     width: 100%;
@@ -182,8 +184,6 @@ h3 {
     background-image: url(../images/image1.png);
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
@@ -199,7 +199,6 @@ h3 {
   }
 
   .works-body ul {
-    display: flex;
     justify-content: space-between;
     list-style: none;
     width: 75%;
@@ -234,8 +233,6 @@ h3 {
   }
 
   .about-head {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: space-around;
     padding: 0 10px;
@@ -280,14 +277,10 @@ h3 {
 
   .about-body {
     margin-top: 120px;
-    display: flex;
-    flex-direction: column;
   }
 
   .about-body ul {
     list-style: none;
-    display: flex;
-    flex-direction: column;
     align-items: center;
   }
 
@@ -311,27 +304,20 @@ h3 {
     color: #f4f1f0;
   }
 
-  .contact_form {
-    display: flex;
-    flex-flow: column;
-  }
-
   .contact_title {
-    margin: 69px 5% 60px 5%;
-    flex-wrap: wrap;
-    width: 90%;
+    margin: 69px 5% 80px 5%;
+    width: 325px;
     height: 216px;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
     text-align: center;
+    align-self: center;
     color: #172b4d;
   }
 
   form {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     width: 90%;
     margin-left: 5%;
@@ -348,9 +334,6 @@ h3 {
   }
 
   form textarea {
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
     font-style: italic;
     height: 114px;
     background-color: #fbf8f7;
@@ -362,32 +345,54 @@ h3 {
     width: 100%;
   }
 
+  textarea::placeholder {
+    color: #3c3a39;
+    padding-top: 10px;
+  }
+
   .contact_button {
     margin-top: 24px;
     margin-bottom: 78px;
-    padding: 12px;
+    padding: 14px;
     border: none;
     font-weight: 700;
-    font-size: 17px;
-    line-height: 24px;
+    font-size: 1.1rem;
+    line-height: 26px;
     color: #fff;
     background: #ff6b00;
   }
 
   .contact_button:hover {
-    padding: 11px;
     background-color: #fff5e1;
     border: 1px solid #f55800;
     cursor: pointer;
     color: #f55800;
   }
 
+  .contact_button:active {
+    background-color: #e05304;
+    color: #f4f1f0;
+  }
+
+
+
   footer ul li {
-    margin: 11px;
+    margin: 0 11px;
   }
 
   footer ul li img {
     width: 20px;
     height: 20px;
+  }
+
+  .line {
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  footer {
+    height: 90px;
   }
 }

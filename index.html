@@ -8,14 +8,14 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <header>
+    <header class="flex-row">
         <a class="logo-header" href="index.html"><p>My logo</p></a>
         <nav>                
             <button class="hamburger-btn"><img src="./images/Union.svg" alt="hamburguer">
         </nav>
     </header>
     <main>       
-        <section class="headline">
+        <section class="headline flex-col">
             <div class="title-headline">
                 <h1>Hey There.<br> I’m Alex.</h1>
             </div>
@@ -28,7 +28,7 @@
                 don’t hesitate to contact me.</p>
             </div>
             <br>
-            <ul class="social-link">
+            <ul class="social-link flex-row">
                 <li><a href=""><img src="./images/git.svg" alt="github"></a></li>
                 <li><a href=""><img src="./images/Lin.svg" alt="linkedin"></a></li>
                 <li><a href=""><img src="./images/Mano.svg" alt="hand"></a></li>
@@ -37,12 +37,12 @@
             </ul>            
         </section>
         <section class="works">
-            <div class="works-header">
+            <div class="works-header flex-col">
                 <h2>My Recent Works</h2>
                 <img class="works-img" src="./images/image2.png" alt="woman">
                 <h3>Multi-Post Stories</h3>
                 <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-                <ul>
+                <ul class="flex-row">
                     <li><p>CSS</p></li>
                     <li><p>HTML</p></li>
                     <li><p>Bootstrap</p></li>
@@ -50,75 +50,75 @@
                 </ul>
                 <button class="see-btn">See project</button>
             </div>
-            <div class="works-body">
+            <div class="works-body flex-col">
                 <h3>Profesional Art Printing Data</h3>
                 <p>A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
-                <ul>
+                <ul class="flex-row">
                     <li><p>HTML</p></li>
                     <li><p>Bootstrap</p></li>
                     <li><p>Ruby</p></li>
                 </ul>
-                <button class="see-btn">See Project</button>
+                <button class="see-btn">See Project</button>          
             </div>
-            <div class="works-body">
+            <div class="works-body flex-col">
                 <h3>Profesional Art Printing Data</h3>
                 <p>A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
-                <ul>
+                <ul class="flex-row">
                     <li><p>HTML</p></li>
                     <li><p>Bootstrap</p></li>
                     <li><p>Ruby</p></li>
                 </ul>
-                <button class="see-btn">See Project</button>
+                <button class="see-btn">See Project</button>          
             </div>
-            <div class="works-body">
+            <div class="works-body flex-col">
                 <h3>Profesional Art Printing Data</h3>
                 <p>A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
-                <ul>
+                <ul class="flex-row">
                     <li><p>HTML</p></li>
                     <li><p>Bootstrap</p></li>
                     <li><p>Ruby</p></li>
                 </ul>
-                <button class="see-btn">See Project</button>
+                <button class="see-btn">See Project</button>          
             </div>
-            <div class="works-body">
+            <div class="works-body flex-col">
                 <h3>Profesional Art Printing Data</h3>
                 <p>A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
-                <ul>
+                <ul class="flex-row">
                     <li><p>HTML</p></li>
                     <li><p>Bootstrap</p></li>
                     <li><p>Ruby</p></li>
                 </ul>
-                <button class="see-btn">See Project</button>
+                <button class="see-btn">See Project</button>          
             </div>
-            <div class="works-body">
+            <div class="works-body flex-col">
                 <h3>Profesional Art Printing Data</h3>
                 <p>A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
-                <ul>
+                <ul class="flex-row">
                     <li><p>HTML</p></li>
                     <li><p>Bootstrap</p></li>
                     <li><p>Ruby</p></li>
                 </ul>
-                <button class="see-btn">See Project</button>
+                <button class="see-btn">See Project</button>          
             </div>
-            <div class="works-body">
+            <div class="works-body flex-col">
                 <h3>Profesional Art Printing Data</h3>
                 <p>A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
-                <ul>
+                <ul class="flex-row">
                     <li><p>HTML</p></li>
                     <li><p>Bootstrap</p></li>
                     <li><p>Ruby</p></li>
                 </ul>
-                <button class="see-btn">See Project</button>
+                <button class="see-btn">See Project</button>          
             </div>            
         </section>
         <section class="about">
-            <div class="about-head">
+            <div class="about-head flex-col">
                 <h2>About me</h2>
                 <p>Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
                 <button class="see-btn">Get my resume</button>
             </div>
-            <div class="about-body">   
-                <ul class="knowledge">
+            <div class="about-body flex-col">   
+                <ul class="knowledge flex-col">
                     <li><img src="./images/Rectangle6.svg" alt="icon-rectangle"><h3>  Language</h3></li>
                     <li><p>JavaScript</p></li>
                     <li><p>Ruby</p></li>
@@ -138,36 +138,37 @@
                 </ul>
             </div>            
         </section>
-        <section class="contact_form">
+        <section class="contact_form flex-col">
             <div class="contact_title">
                 <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>            
             </div>
-            <form action="https://formspree.io/f/myyanyge" method="post">
+            <form class="flex-col" action="https://formspree.io/f/myyanyge" method="post">
                 <ul>
                 <li>
                     <label for="name">                
-                        <input type="text" name="name" id="name" placeholder="Full name" maxlength="30" required>
+                        <input type="text" name="name" id="name" placeholder="    Full name" maxlength="30" required>
                     </label>
                 </li>
                 <li>
                     <label for="email">
-                        <input type="email" name="email" id="email" placeholder="Email address" required>
+                        <input type="email" name="email" id="email" placeholder="    Email address" required>
                     </label>
                 </li>
-                <textarea name="" placeholder="Write me something...." maxlength="500"></textarea>
+                <textarea  placeholder="  Write me something...." maxlength="500" required></textarea>
                 </ul>
-                <button type="submit" class="contact_button">Get in touch</button>          
+                <button class="contact_button">Get in touch</button>          
             </form>
             <hr>
         </section>         
             <footer>
-                <ul>
-                    <li><img src="./images/gitBlack.svg" alt=""></li>
-                    <li><img src="./images/LinkedBlack.svg" alt=""></li>
-                    <li><img src="./images/handBlack.svg" alt=""></li>
-                    <li><img src="./images/TwitterBlack.svg" alt=""></li>
-                    <li><img src="./images/mBlack.svg" alt=""></li>
+                <ul class="flex-row">
+                    <li><img src="./images/gitBlack.svg" alt="github"></li>
+                    <li><img src="./images/LinkedBlack.svg" alt="linked_in"></li>
+                    <li><img src="./images/handBlack.svg" alt="hand"></li>
+                    <li><img src="./images/TwitterBlack.svg" alt="twitter"></li>
+                    <li><img src="./images/mBlack.svg" alt="M"></li>
                 </ul>
+                <img class="line" src="./images/Shape.svg" alt="black_line">
             </footer>        
     </main>    
 </body>
