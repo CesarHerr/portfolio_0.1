@@ -168,10 +168,6 @@ footer ul {
   font-weight: 600;
 }
 
-.see-btn {
-  transition-duration: 0.5s;
-}
-
 .works-header .see-btn {
   width: 40%;
   padding: 14px 5px;
