@@ -371,6 +371,7 @@ textarea::placeholder {
   line-height: 26px;
   color: #fff;
   background: #ff6b00;
+  transition: padding 1.4s;
 }
 
 .contact_button:hover {
@@ -378,6 +379,7 @@ textarea::placeholder {
   border: 1px solid #f55800;
   cursor: pointer;
   color: #f55800;
+  padding: 15px;
 }
 
 .contact_button:active {
