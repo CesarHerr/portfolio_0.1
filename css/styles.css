@@ -169,7 +169,7 @@ footer ul {
 }
 
 .see-btn {
-  transition-duration: 0.5s;
+  transition: background-color 1s;
 }
 
 .works-header .see-btn {
@@ -371,6 +371,7 @@ textarea::placeholder {
   line-height: 26px;
   color: #fff;
   background: #ff6b00;
+  transition: padding 1.4s;
 }
 
 .contact_button:hover {
@@ -378,6 +379,7 @@ textarea::placeholder {
   border: 1px solid #f55800;
   cursor: pointer;
   color: #f55800;
+  padding: 15px;
 }
 
 .contact_button:active {
@@ -550,6 +552,7 @@ footer {
     margin-bottom: 20px;
     justify-content: space-around;
     align-items: flex-start;
+    transition: padding 1s;
   }
 
   #works-body-first {
@@ -593,16 +596,6 @@ footer {
     align-items: flex-start;
   }
 
-  /* #works-body-first p,
-  #works-body-first ul,
-  #works-body-first h3 {
-    display: none;
-  } */
-
-  /* #works-body-first .see-btn {
-    margin-top: 412px;
-  } */
-
   .works-body .see-btn {
     padding: 20px 15px;
     background-color: transparent;
@@ -633,6 +626,7 @@ footer {
   .works-body:hover {
     border: solid 2px #1c1a19;
     cursor: pointer;
+    padding: 10px;
   }
 
   .works-body .see-btn:active {
