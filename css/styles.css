@@ -281,11 +281,20 @@ h3 {
     margin-top: 120px;
   }
 
-  .about-body ul {
+  .about-body  ul {   
     list-style: none;
-    align-items: center;
   }
 
+  .knowledge {    
+    align-items: center;    
+  }
+
+  .knowledge ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
   .about-body ul h3 {
     font-size: 1.9rem;
     font-weight: 500;
@@ -396,10 +405,10 @@ h3 {
     height: 90px;
   }
 
-  @media only screen and (max-width: 768px){
+  @media only screen and (max-width: 767px){
   nav ul li, .work-line, .works-img-full {
     display: none
-  }
+  }  
 
   
 }
@@ -544,7 +553,7 @@ h3 {
 
   @media only screen and (max-width:1075px){
    #works-body-3, #works-body-first, #works-body-5 {
-    margin-left: 15%;
+    margin-left: 10%;
    }
 
    #works-body-4 {
@@ -555,49 +564,100 @@ h3 {
   .about {
     margin-top: 1200px;
     display: flex;    
-    flex-wrap: wrap;
-    height: 900px;
+    flex-direction: column;
+    height: 1400px;
     clear: both;
     background-image: url(../images/ImageAbout.png);
-    background-size: 50%;
-    background-position: 100% 18%;
+    background-size: 38%;
+    background-position: 100% 18%;    
   } 
   
   .about-head {
-    margin: 0 10%;
-    width: 85%;    
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content:space-around;
-    height: 650px;
+    align-items:flex-start;     
+    border-bottom: solid 2px #fff;  
+    width: 80%;
+    margin: 0 auto;   
+    padding-bottom: 200px; 
   }
   
-  .about-head h2 {
-    font-size: 5rem;
+  .about-head h2 {  
+    top: -20px;  
+    font-size: 5.5rem;  
   }
 
-  .about-head p {
-    width: 45%;
-    min-width: 300px;
-    font-size: 1.3rem !important;
-    
+  .about .about-head p {
+    top: -10px;
+    font-size: 20px;
+    line-height: 1.8rem;    
+    width: 46%;
+    min-width: 370px;
   }
 
   .about-head .see-btn {
-    width: 17%;
-    min-width: 150px;
+    top: 30px;
+    width: 15%;
+    font-weight: 700;
+    min-width: 150px;        
+  }  
+
+  .knowledge {
+    flex-direction: row;    
+    justify-content: space-around;
+    align-items: flex-start;
+  }
    
+  .knowledge ul {
+    align-items: flex-start;    
   }
 
-  .about-body {
-    width: 100%;
-    background-color: #e05304;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  .contact_form {
+    flex-direction: row; 
+    justify-content: space-between; 
+    width: 85%;   
+    margin: 0 auto;    
+    border: none;      
   }
 
-  
+  .contact_title {
+    margin-top: -30px;
+    width: 45%;
+    min-width: 350px;
+    text-align: start;      
+    font-size: 36px;
+    line-height: 54px;      
+    color: #172b4d;    
+  }
+
+  form {  
+    margin: 100px 0 0 0; 
+    width: 70%; 
+    align-items:flex-start;          
+  }
+
+  .contact_button {    
+    margin-bottom: 130px; 
+    margin-left: 15px;  
+  }
+
+  .contact_form hr {
+    display: none;
+  } 
+
+  .line {
+    display: none;
+  }
+
+  footer {
+    border-top: solid 1px #DFE1E6;;
+    height: 50px;
+    margin: 0;
+    padding: 0;       
+  }  
+
+  footer ul {    
+    margin-top: 25px;
+    padding-bottom: 25px;      
+  }
+
 }
 
