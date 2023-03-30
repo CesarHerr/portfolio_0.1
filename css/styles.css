@@ -553,7 +553,7 @@ footer {
   }
 
   #works-body-first {
-    background-image: url(../images/first.png);
+    background-image: url(../images/fourth.png);
     align-items: center;
   }
 
@@ -593,14 +593,51 @@ footer {
     align-items: flex-start;
   }
 
-  #works-body-first p,
+  /* #works-body-first p,
   #works-body-first ul,
   #works-body-first h3 {
     display: none;
+  } */
+
+  /* #works-body-first .see-btn {
+    margin-top: 412px;
+  } */
+
+  .works-body .see-btn {
+    padding: 20px 15px;
+    background-color: transparent;
+    color: transparent;
+    margin: 0 0 -20px 0;
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    bottom: 20px;
   }
 
-  #works-body-first .see-btn {
-    margin-top: 121%;
+  .works-body:hover .see-btn {
+    background-color: #ff6b00;
+    color: #fff;
+  }
+
+  .works-body .see-btn:hover {
+    background-color: #fff5e1;
+    border: solid 1px #f55800;
+    color: #f55800;
+    font-weight: bold;
+  }
+
+  .works-body:hover .hover {
+    color: transparent;
+  }
+
+  .works-body:hover {
+    border: solid 2px #1c1a19;
+    cursor: pointer;
+  }
+
+  .works-body .see-btn:active {
+    background-color: #e05304;
+    color: #f4f1f0;
   }
 
   #works-body-2,
@@ -623,10 +660,6 @@ footer {
   }
 
   .small-data {
-    display: none;
-  }
-
-  .full-erase-btn {
     display: none;
   }
 
