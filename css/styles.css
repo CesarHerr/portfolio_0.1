@@ -217,7 +217,7 @@ footer ul {
   border: none;
   background-color: #ff6b00;
   color: #fff;
-  font-size: 20px;
+  font-size: 20px;  
 }
 
 .about {
@@ -298,12 +298,16 @@ footer ul {
   color: #fff;
 }
 
+.see-btn {
+  transition: background-color 1s;
+}
+
 .see-btn:hover {
   cursor: pointer;
   color: #f55800;
   font-weight: bold;
   background-color: #fff5e1;
-  border: solid 1px #f55800;
+  border: solid 1px #f55800;  
 }
 
 .see-btn:active {
