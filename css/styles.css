@@ -168,6 +168,10 @@ footer ul {
   font-weight: 600;
 }
 
+.see-btn {
+  transition: background-color 1s;
+}
+
 .works-header .see-btn {
   width: 40%;
   padding: 14px 5px;
@@ -217,7 +221,7 @@ footer ul {
   border: none;
   background-color: #ff6b00;
   color: #fff;
-  font-size: 20px;  
+  font-size: 20px;
 }
 
 .about {
@@ -298,16 +302,12 @@ footer ul {
   color: #fff;
 }
 
-.see-btn {
-  transition: background-color 1s;
-}
-
 .see-btn:hover {
   cursor: pointer;
   color: #f55800;
   font-weight: bold;
   background-color: #fff5e1;
-  border: solid 1px #f55800;  
+  border: solid 1px #f55800;
 }
 
 .see-btn:active {
@@ -595,16 +595,6 @@ footer {
   .knowledge ul {
     align-items: flex-start;
   }
-
-  /* #works-body-first p,
-  #works-body-first ul,
-  #works-body-first h3 {
-    display: none;
-  } */
-
-  /* #works-body-first .see-btn {
-    margin-top: 412px;
-  } */
 
   .works-body .see-btn {
     padding: 20px 15px;
