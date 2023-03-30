@@ -550,6 +550,7 @@ footer {
     margin-bottom: 20px;
     justify-content: space-around;
     align-items: flex-start;
+    transition: padding 1s;
   }
 
   #works-body-first {
@@ -633,6 +634,7 @@ footer {
   .works-body:hover {
     border: solid 2px #1c1a19;
     cursor: pointer;
+    padding: 10px;
   }
 
   .works-body .see-btn:active {
