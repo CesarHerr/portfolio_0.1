@@ -52,6 +52,12 @@ header {
   cursor: pointer;
 }
 
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
 .headline {
   background-color: #1c1a19;
   background-image: url(../images/Group.svg);

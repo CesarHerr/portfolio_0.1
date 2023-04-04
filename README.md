@@ -62,9 +62,7 @@
 
 
 ```
-- **[Setup and mobile first]**
-- **[Added a toolbar]**
-- **[Added a heading section]**
+- **[application Deploy ]**
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -74,7 +72,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- Coming soon
+- https://cesarherr.github.io/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -180,8 +178,10 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Desktop Version.
-- Add more information.
+- Accessibility improvements.
+- Add Works
+- Add Curriculum
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
