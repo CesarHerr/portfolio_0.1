@@ -425,7 +425,7 @@ footer {
     display: none;
   }
 
-  .logo-header.visible {  
+  .visible {  
     display: none; 
   }
 
@@ -433,26 +433,29 @@ footer {
     display: none;
   }
   
-   .menu.show {
+  .menu.show {
     display: flex;    	
 		flex-direction: column;				    
-		font-size: 4rem;		
-		text-align:left;
-		background-color: #3C3A39;
- 
+		font-size: 3.5rem;		
+		text-align:left;		
     margin-left: 40px;    
-    height: 700px
+    height: 700px;
+    margin-top: 60px;    
   } 
+
+  .nav-bar.change-width {    
+    width: 90%;
+  }
 
   .menu.show li {      
     display: inline;          
-		width: 100%;
-		border-bottom: solid 2px rgb(195, 188, 188);	
-    z-index: 1000;
+		width: 100%;		   
+	}  
 
-	}
- 
-}
+  .show li:hover {
+    padding: 2.5rem;  
+    background-color: rgba(81, 80, 80, 0.371);
+  }
 
 @media only screen and (min-width: 768px) {
 
