@@ -12,6 +12,7 @@ html {
   font-family: 'Inter', sans-serif;
 }
 
+
 h1,
 h2,
 h3 {
@@ -31,7 +32,8 @@ header {
   justify-content: space-between;
   align-items: center;
   background: #3c3a39;
-  height: 52px;
+  padding: 10px 0;
+  
 }
 
 .logo-header {
@@ -417,20 +419,48 @@ footer {
 }
 
 @media only screen and (max-width: 767px) {
-  nav ul li,
   .work-line,
   .works-img-full,
   .full-data {
     display: none;
   }
+
+  .logo-header.visible {  
+    display: none; 
+  }
+
+  .flex-row.menu {
+    display: none;
+  }
+  
+   .menu.show {
+    display: flex;    	
+		flex-direction: column;				    
+		font-size: 4rem;		
+		text-align:left;
+		background-color: #3C3A39;
+ 
+    margin-left: 40px;    
+    height: 700px
+  } 
+
+  .menu.show li {      
+    display: inline;          
+		width: 100%;
+		border-bottom: solid 2px rgb(195, 188, 188);	
+    z-index: 1000;
+
+	}
+ 
 }
 
 @media only screen and (min-width: 768px) {
+
   header {
     height: 72px;
     padding: 0 5%;
   }
-
+  
   .hamburger-btn {
     display: none;
   }
