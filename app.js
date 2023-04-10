@@ -14,3 +14,13 @@ menuIcon.addEventListener('click', () => {
   nav.classList.toggle('change-width')
   
 });
+
+menu.addEventListener('click', () => {
+  menu.classList.toggle('show');
+  menuIcon.classList.toggle('show-icon');
+  logo.classList.toggle('visible')
+  closeBtn.classList.toggle('close')
+  email.classList.toggle('visible')
+  nav.classList.toggle('change-width')
+  
+});
