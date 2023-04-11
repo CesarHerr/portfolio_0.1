@@ -906,3 +906,20 @@ footer {
   margin-left: 30px;
   line-height: 1.8rem;  
 }
+
+.cardDesktopPopup button {
+  margin-top: 70px;
+  background-color: #F55800;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+
+}
+
+.cardDesktopPopup .close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  width: 20px;
+
+}
