@@ -523,10 +523,10 @@ footer {
 
   header nav {
     width: 30%;
-    min-width: 240px;
+    min-width: 340px;
   }
 
-  nav ul {
+  .menu {
     display: flex;
     list-style: none;
     justify-content: space-between;
@@ -541,6 +541,23 @@ footer {
     justify-content: space-between;
     width: 100px;
   }
+
+  .menu li:hover {
+    box-shadow: 12.8px 20.6px 5.3px rgba(0, 0, 0, 0.194), 
+    23.3px 37.6px 17.9px rgba(0, 0, 0, 0.286), 
+    52px 84px 80px rgba(0, 0, 0, 0.48);
+    padding: 0.4rem 1rem;
+    border: solid 1px rgba(0, 0, 0, 0.194);
+    border-radius: 0.8rem;
+    font-size: 1.6rem;
+    transition: all 0.4s ease-in-out;    
+  } 
+
+  .link-contact:hover img{
+    display: none;    
+  }
+
+ 
 
   .headline {
     background-image: url(../images/Illustration-header.svg);
