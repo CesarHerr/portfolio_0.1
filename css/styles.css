@@ -879,3 +879,16 @@ footer {
   flex-direction: column; 
 }
 
+.popup-header .popup-skills {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.popup-header .popup-skills li {
+  list-style: none;
+  padding: 4px;
+  border: solid 1px black;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
