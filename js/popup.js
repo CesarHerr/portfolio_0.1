@@ -82,7 +82,7 @@ cardPopup.forEach((parameter, index) => {
 
     cards.innerHTML =`
     <div class="cardDesktopPopup">
-        <button class="close"><img src="${objectWorks[index].buttonClose}" alt=""></button>    
+        <img class="close" src="${objectWorks[index].buttonClose}" alt="">   
         <div class="popup-header">
             <h2>${objectWorks[index].title}</h2>        
             <ul class="popup-skills">
@@ -91,15 +91,15 @@ cardPopup.forEach((parameter, index) => {
                 <li>${objectWorks[index].skills[2]}</li>
             </ul>
         </div>
-        <img src="${objectWorks[index].img}" alt="imagen_project">
-        <p>${objectWorks[index].description}</p>
-        <div>
+        <img class="image-project" src="${objectWorks[index].img}" alt="imagen_project">
+        <div class="popup-description">
+            <p>${objectWorks[index].description}</p>        
             <button class="btnSeeLive"><a href="${objectWorks[index].btnSeeLive}">See Live</a></button>
             <button class="btnSeeSource"><a href="${objectWorks[index].btnSeeSource}">See Source</button>
         </div>
     </div>`;
 
-    main.appendChild(cards)
+    main.insertAdjacentElement('afterBegin', cards)
     const close = document.querySelector('.close')
     close.addEventListener('click',()=>{
     main.removeChild(cards)

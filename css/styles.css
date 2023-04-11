@@ -34,7 +34,7 @@ header {
   align-items: center;
   background: #3c3a39;
   padding: 20px 0;
-  z-index: 100;
+  z-index: 10;
 }
 
 .logo-header {
@@ -850,32 +850,32 @@ footer {
   }
 }
 
+.popup-container {
+  position: fixed;
+  z-index: 11;  
+  width: 100vw;
+  height: 100vh; background-color: #232c3ca9;
+  
+
+}
+
 .cardDesktopPopup {
   display: grid;
-  grid-template-columns: repeat(5 1fr);
-  grid-template-rows: repeat(4 1fr);
+  grid-template-columns: repeat(6 1fr);
+  grid-template-rows: repeat(4 1fr);  
+  background-color: #fff; 
+  width: 80%;
   position: absolute;
-  background-color: #3c3a3941;
-  width: 100vw;
-  height: 100vh;
-}
-
-.cardDesktopPopup .popup-header {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   
-  grid-area: 1 / 1 / 2 / 6;
+}
+
+.cardDesktopPopup .popup-header {  
+  margin: 20px;
+  grid-area: 1 / 1 / 2 / 7;
   display: flex;
-  flex-direction: column;  
+  flex-direction: column; 
 }
 
-.popup-header .popup-skills {
-  display: flex;
-  justify-content: space-around;
-  width: 40%;
-}
-
-.popup-header .popup-skills li {
-  list-style: none;
-  padding: 15px;
-  border: solid 1px black;
-
-}
