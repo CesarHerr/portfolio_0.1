@@ -12,7 +12,6 @@ html {
   font-family: 'Inter', sans-serif;
 }
 
-
 h1,
 h2,
 h3 {
@@ -34,7 +33,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background: #3c3a39;
-  padding: 20px 0;  
+  padding: 20px 0;
   z-index: 100;
 }
 
@@ -49,7 +48,7 @@ header {
   background: none;
   border: none;
   position: relative;
-  right: 35px;    
+  right: 35px;
 }
 
 .hamburger-btn img {
@@ -58,21 +57,13 @@ header {
 
 .hamburger-btn:hover,
 .hambuguer-close {
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 a:link,
 a:visited {
   text-decoration: none;
   color: #fff;
-}
-
-.menu li a p {
-  display: inline;
-}
-
-.menu li {
-  
 }
 
 .headline {
@@ -82,7 +73,7 @@ a:visited {
   background-repeat: no-repeat;
   background-position: 100% 115%;
   justify-content: center;
-  height:660px;
+  height: 660px;
   overflow: hidden;
 }
 
@@ -434,6 +425,10 @@ footer {
   height: 90px;
 }
 
+.menu li a p {
+  display: inline;
+}
+
 @media only screen and (max-width: 767px) {
   .work-line,
   .works-img-full,
@@ -441,57 +436,57 @@ footer {
     display: none;
   }
 
-  .visible {  
-    display: none; 
+  .visible {
+    display: none;
   }
 
   .menu {
-    display: flex;  
-    position: absolute;  	
-		flex-direction: column;				    
-		font-size: 3.5rem;		
-		text-align:left;		
-    margin-left: 40px;    
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    font-size: 3.5rem;
+    text-align: left;
+    margin-left: 40px;
     height: 700px;
-    margin-top: 60px;  
+    margin-top: 60px;
     transform: translate3d(0, 100%, 0);
     transition: transform 0.5s ease-in-out;
     list-style: none;
   }
-  
+
   .menu.show {
-    display: flex;  
-    position: relative;  	
-		flex-direction: column;				    
-		font-size: 3.5rem;		
-		text-align:left;		
-    margin-left: 40px;    
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    font-size: 3.5rem;
+    text-align: left;
+    margin-left: 40px;
     height: 700px;
-    margin-top: 60px;  
+    margin-top: 60px;
     transform: translate3d(0, 0, 0);
     transition: transform 0.5s ease-in-out;
-  } 
+  }
 
-  .nav-bar.change-width {    
+  .nav-bar.change-width {
     width: 90%;
   }
 
-  .menu.show li {      
-    display: inline;          
-		width: 100%;		
-    border-bottom: solid 1px #6F6C6B;   
-    padding: 1rem;   
-	}  
+  .menu.show li {
+    display: inline;
+    width: 100%;
+    border-bottom: solid 1px #6f6c6b;
+    padding: 1rem;
+  }
 
   .show li:hover {
-    padding: 2rem;  
+    padding: 2rem;
     background-color: rgba(81, 80, 80, 0.371);
     transition: all 0.3s ease-in-out;
     box-shadow:
-     -3.8px -3.8px 3.6px rgba(0, 0, 0, 0.15),
-    -27.8px -27.8px 10px rgba(0, 0, 0, 0.147),
-    -67.5px -67.5px 24.1px rgba(0, 0, 0, 0.101),
-    500px 500px 80px rgba(0, 0, 0, 0.03);
+      -3.8px -3.8px 3.6px rgba(0, 0, 0, 0.15),
+      -27.8px -27.8px 10px rgba(0, 0, 0, 0.147),
+      -67.5px -67.5px 24.1px rgba(0, 0, 0, 0.101),
+      500px 500px 80px rgba(0, 0, 0, 0.03);
   }
 
   .menu.show li a {
@@ -499,30 +494,29 @@ footer {
   }
 
   .hambuguer-close.close {
-    display: block;  
+    display: block;
     position: absolute;
     background: none;
-    border: none; 
-    right: 0;   
-    top: -30px;    
-  } 
+    border: none;
+    right: 0;
+    top: -30px;
+  }
 
   .hambuguer-close.close img {
     width: 20px;
-  }   
- 
+  }
 }
 
 .hambuguer-close {
   display: none;
 }
-@media only screen and (min-width: 768px) {
 
+@media only screen and (min-width: 768px) {
   header {
     height: 72px;
     padding: 0 5%;
   }
-  
+
   .hamburger-btn {
     display: none;
   }
@@ -542,10 +536,10 @@ footer {
   }
 
   .menu li:last-child {
-    margin-top: 5px ;
+    margin-top: 5px;
     display: flex;
     justify-content: space-between;
-    width: 100px;          
+    width: 100px;
   }
 
   .headline {
@@ -561,7 +555,7 @@ footer {
 
   .description-headline p {
     font-family: 'Inter', sans-serif;
-    font-size: 1.3rem;    
+    font-size: 1.3rem;
   }
 
   .social-link {
