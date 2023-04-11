@@ -849,3 +849,33 @@ footer {
     padding: 0;
   }
 }
+
+.cardDesktopPopup {
+  display: grid;
+  grid-template-columns: repeat(5 1fr);
+  grid-template-rows: repeat(4 1fr);
+  position: absolute;
+  background-color: #3c3a3941;
+  width: 100vw;
+  height: 100vh;
+}
+
+.cardDesktopPopup .popup-header {
+  
+  grid-area: 1 / 1 / 2 / 6;
+  display: flex;
+  flex-direction: column;  
+}
+
+.popup-header .popup-skills {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.popup-header .popup-skills li {
+  list-style: none;
+  padding: 15px;
+  border: solid 1px black;
+
+}
