@@ -892,3 +892,17 @@ footer {
   font-size: 0.9rem;
   margin-top: 10px;
 }
+
+.cardDesktopPopup .image-project {
+  grid-area: 2 / 1 / 5 / 6;
+  width: 90%;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.cardDesktopPopup .popup-description {
+  grid-area: 2 / 6 / 5 / 7;
+  width: 80%;
+  margin-left: 30px;
+  line-height: 1.8rem;  
+}
