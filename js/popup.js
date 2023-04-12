@@ -143,7 +143,6 @@ cardPopupMobile.forEach((parameter, index) => {
             </a>     
         </div>
     </div>`;
-
     main.insertAdjacentElement('afterBegin', cards);
     const close = document.querySelector('.close');
     close.addEventListener('click', () => {
