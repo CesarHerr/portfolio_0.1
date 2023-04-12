@@ -664,16 +664,16 @@ footer {
   }
 
   .works-body {
-    width: 25%;
+    width: 30%;
     height: 465px;
     position: relative;
     float: left;
-    margin: 0.8%;
-    min-width: 310px;
+    min-width: 320px;
     margin-bottom: 20px;
     justify-content: space-around;
-    align-items: flex-start;
     transition: padding 0.6s;
+    transform: translate(10%, 0);
+    margin-left: 15px;
   }
 
   .works-body h3 {
@@ -728,6 +728,12 @@ footer {
     color: #fff;
   }
 
+  .works-body:hover .box-body li p {
+    color: transparent;
+    border: none;
+    background-color: transparent;
+  }
+
   .works-body .see-btn:hover {
     background-color: #fff5e1;
     border: solid 1px #f55800;
@@ -750,30 +756,8 @@ footer {
     color: #f4f1f0;
   }
 
-  #works-body-3 ul,
-  #works-body-6 ul {
-    margin-bottom: -10px;
-  }
-
   .small-data {
     display: none;
-  }
-
-  #works-body-first,
-  #works-body-4 {
-    margin-left: 10%;
-  }
-
-  @media only screen and (max-width: 1075px) {
-    #works-body-3,
-    #works-body-first,
-    #works-body-5 {
-      margin-left: 10%;
-    }
-
-    #works-body-4 {
-      margin-left: 0.8%;
-    }
   }
 
   .about {
@@ -851,6 +835,8 @@ footer {
   }
 }
 
+/* pop up styles, mobile */
+
 .popup-container {
   position: fixed;
   z-index: 11;
@@ -870,13 +856,15 @@ footer {
   transform: translate(-50%, -50%);
   height: auto;
   padding-bottom: 30px;
+  color: #172b4d;
 }
 
 .cardDesktopPopup .popup-header {
   margin: 20px;
   max-width: 80%;
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: 400;
+  font-family: 'Crete Round', serif;
 }
 
 .popup-header .popup-skills {
@@ -892,6 +880,7 @@ footer {
   padding: 4px;
   border: solid 2px #dfe1e6;
   font-size: 0.9rem;
+  color: #172b4d;
   margin-top: 10px;
 }
 
@@ -956,13 +945,13 @@ footer {
     justify-content: space-around;
     width: 35%;
     min-width: 330px;
+    margin-top: 0;
   }
 
   .popup-header .popup-skills li {
     padding: 10px;
     border: solid 2px #dfe1e6;
     font-size: 1rem;
-    margin-top: 10px;
   }
 
   .cardDesktopPopup .image-project {
@@ -976,7 +965,7 @@ footer {
   .cardDesktopPopup .popup-description {
     grid-area: 2 / 6 / 5 / 7;
     width: 85%;
-    margin: 5% 0  10px 30px;
+    margin: -20px 0  10px 30px;
     line-height: 1.5rem;
   }
 
