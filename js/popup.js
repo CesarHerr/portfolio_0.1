@@ -1,74 +1,74 @@
 const objectWorks = [
-{
+  {
     id: 'card_0',
-    title: ['Keeping track of hundreds  of components website','Multi Post Stories'],
-    skills: ['HTML', 'Bootstrap', 'Ruby on Rails'],      
-    img: ['../images/PopupDesktop.png','../images/popicon.svg', '../images/gitpop.svg'],    
+    title: ['Keeping track of hundreds  of components website', 'Multi Post Stories'],
+    skills: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+    img: ['../images/PopupDesktop.png', '../images/popicon.svg', '../images/gitpop.svg'],
     buttonClose: '../images/ClosePopup.svg',
     btnSeeLive: 'index.html',
     btnSeeSource: 'index.html',
-    description: ["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. <br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.","Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent"],
-},
-{
+    description: ["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. <br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent"],
+  },
+  {
     id: 'card_1',
-    title: ['Keeping track of hundreds  of components website','Multi Post Stories'],
-    skills: ['HTML', 'Bootstrap', 'Ruby on Rails'],      
-    img: ['../images/PopupDesktop.png','../images/popicon.svg', '../images/gitpop.svg'],    
+    title: ['Keeping track of hundreds  of components website', 'Multi Post Stories'],
+    skills: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+    img: ['../images/PopupDesktop.png', '../images/popicon.svg', '../images/gitpop.svg'],
     buttonClose: '../images/ClosePopup.svg',
     btnSeeLive: 'index.html',
     btnSeeSource: 'index.html',
-    description: ["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.  <br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.","Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent"],
-},
-{
+    description: ["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.  <br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent"],
+  },
+  {
     id: 'card_2',
-    title: ['Keeping track of hundreds  of components website','Multi Post Stories'],
-    skills: ['HTML', 'Bootstrap', 'Ruby on Rails'],      
-    img: ['../images/PopupDesktop.png','../images/popicon.svg', '../images/gitpop.svg'],    
+    title: ['Keeping track of hundreds  of components website', 'Multi Post Stories'],
+    skills: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+    img: ['../images/PopupDesktop.png', '../images/popicon.svg', '../images/gitpop.svg'],
     buttonClose: '../images/ClosePopup.svg',
     btnSeeLive: 'index.html',
     btnSeeSource: 'index.html',
-    description: ["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.  <br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.","Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent"],
-},
-{
+    description: ["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.  <br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent"],
+  },
+  {
     id: 'card_3',
-    title: ['Keeping track of hundreds  of components website','Multi Post Stories'],
-    skills: ['HTML', 'Bootstrap', 'Ruby on Rails'],      
-    img: ['../images/PopupDesktop.png','../images/popicon.svg', '../images/gitpop.svg'],    
+    title: ['Keeping track of hundreds  of components website', 'Multi Post Stories'],
+    skills: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+    img: ['../images/PopupDesktop.png', '../images/popicon.svg', '../images/gitpop.svg'],
     buttonClose: '../images/ClosePopup.svg',
     btnSeeLive: 'index.html',
     btnSeeSource: 'index.html',
-    description: ["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.  <br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.","Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent"],
-},
-{
+    description: ["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.  <br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent"],
+  },
+  {
     id: 'card_4',
-    title: ['Keeping track of hundreds  of components website','Multi Post Stories'],
-    skills: ['HTML', 'Bootstrap', 'Ruby on Rails'],      
-    img: ['../images/PopupDesktop.png','../images/popicon.svg', '../images/gitpop.svg'],    
+    title: ['Keeping track of hundreds  of components website', 'Multi Post Stories'],
+    skills: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+    img: ['../images/PopupDesktop.png', '../images/popicon.svg', '../images/gitpop.svg'],
     buttonClose: '../images/ClosePopup.svg',
     btnSeeLive: 'index.html',
     btnSeeSource: 'index.html',
-    description: ["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.  <br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.","Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent"],
-},
-{
+    description: ["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.  <br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent"],
+  },
+  {
     id: 'card_5',
-    title: ['Keeping track of hundreds  of components website','Multi Post Stories'],
-    skills: ['HTML', 'Bootstrap', 'Ruby on Rails'],      
-    img: ['../images/PopupDesktop.png','../images/popicon.svg', '../images/gitpop.svg'],    
+    title: ['Keeping track of hundreds  of components website', 'Multi Post Stories'],
+    skills: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+    img: ['../images/PopupDesktop.png', '../images/popicon.svg', '../images/gitpop.svg'],
     buttonClose: '../images/ClosePopup.svg',
     btnSeeLive: 'index.html',
     btnSeeSource: 'index.html',
-    description: ["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.  <br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.","Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent"],
-},
-{
+    description: ["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.  <br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent"],
+  },
+  {
     id: 'card_6',
-    title: ['Keeping track of hundreds  of components website','Multi Post Stories'],
-    skills: ['HTML', 'Bootstrap', 'Ruby on Rails'],      
-    img: ['../images/PopupDesktop.png','../images/popicon.svg', '../images/gitpop.svg'],    
+    title: ['Keeping track of hundreds  of components website', 'Multi Post Stories'],
+    skills: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+    img: ['../images/PopupDesktop.png', '../images/popicon.svg', '../images/gitpop.svg'],
     buttonClose: '../images/ClosePopup.svg',
     btnSeeLive: 'index.html',
     btnSeeSource: 'index.html',
-    description: ["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.  <br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.","Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent"],
-}
+    description: ["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.  <br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent"],
+  },
 
 ];
 
@@ -77,11 +77,11 @@ const main = document.querySelector('body');
 const cardPopup = document.querySelectorAll('.see-desktop');
 
 cardPopup.forEach((parameter, index) => {
-    parameter.addEventListener('click', () => {       
+  parameter.addEventListener('click', () => {
     const cards = document.createElement('div');
-    cards.className = "popup-container"
+    cards.className = 'popup-container';
 
-    cards.innerHTML =`
+    cards.innerHTML = `
     <div class="cardDesktopPopup">
         <img class="close" src="${objectWorks[index].buttonClose}" alt="">   
         <div class="popup-header">
@@ -104,24 +104,24 @@ cardPopup.forEach((parameter, index) => {
         </div>
     </div>`;
 
-    main.insertAdjacentElement('afterBegin', cards)
-    const close = document.querySelector('.close')
-    close.addEventListener('click',()=>{
-    main.removeChild(cards)
+    main.insertAdjacentElement('afterBegin', cards);
+    const close = document.querySelector('.close');
+    close.addEventListener('click', () => {
+      main.removeChild(cards);
     });
-    });
+  });
 });
-//popup movile version
 
-const mainMobile = document.querySelector('body');
+// popup movile version
+
 const cardPopupMobile = document.querySelectorAll('.see-mobile');
 
 cardPopupMobile.forEach((parameter, index) => {
-    parameter.addEventListener('click', () => {      
+  parameter.addEventListener('click', () => {
     const cards = document.createElement('div');
-    cards.className = "popup-container"
+    cards.className = 'popup-container';
 
-    cards.innerHTML =`
+    cards.innerHTML = `
     <div class="cardDesktopPopup">
         <img class="close" src="${objectWorks[index].buttonClose}" alt="">   
         <div class="popup-header">
@@ -144,10 +144,10 @@ cardPopupMobile.forEach((parameter, index) => {
         </div>
     </div>`;
 
-    main.insertAdjacentElement('afterBegin', cards)
-    const close = document.querySelector('.close')
-    close.addEventListener('click',()=>{
-    main.removeChild(cards)
+    main.insertAdjacentElement('afterBegin', cards);
+    const close = document.querySelector('.close');
+    close.addEventListener('click', () => {
+      main.removeChild(cards);
     });
-    });
+  });
 });

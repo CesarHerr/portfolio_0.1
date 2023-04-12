@@ -183,7 +183,8 @@ a:visited {
   font-weight: 600;
 }
 
-.see-btn, .get-my-resume-btn {
+.see-btn,
+.get-my-resume-btn {
   transition: background-color 0.7s;
 }
 
@@ -316,7 +317,8 @@ a:visited {
   color: #fff;
 }
 
-.see-btn:hover, .get-my-resume-btn:hover {
+.see-btn:hover,
+.get-my-resume-btn:hover {
   cursor: pointer;
   color: #f55800;
   font-weight: bold;
@@ -324,7 +326,8 @@ a:visited {
   border: solid 1px #f55800;
 }
 
-.see-btn:active, .get-my-resume-btn:active {
+.see-btn:active,
+.get-my-resume-btn:active {
   background-color: #e05304;
   color: #f4f1f0;
 }
@@ -425,12 +428,16 @@ footer {
   height: 90px;
 }
 
+.cardDesktopPopup p {
+  min-width: 300px;
+  font-size: 0.9rem;
+}
+
 .menu li a p {
   display: inline;
 }
 
-@media only screen and (max-width: 767px) {  
-
+@media only screen and (max-width: 767px) {
   .work-line,
   .works-img-full,
   .full-data {
@@ -521,7 +528,7 @@ footer {
     display: inline;
   }
 
-  .see-mobile{
+  .see-mobile {
     display: none;
   }
 
@@ -865,16 +872,16 @@ footer {
 
 .popup-container {
   position: fixed;
-  z-index: 11;  
+  z-index: 11;
   width: 100vw;
   height: 100vh;
-  background-color: #232c3ca9;      
+  background-color: #232c3ca9;
 }
 
 .cardDesktopPopup {
   display: flex;
-  flex-direction: column; 
-  background-color: #fff; 
+  flex-direction: column;
+  background-color: #fff;
   width: 90%;
   position: absolute;
   left: 50%;
@@ -884,9 +891,9 @@ footer {
   padding-bottom: 30px;
 }
 
-.cardDesktopPopup .popup-header {  
+.cardDesktopPopup .popup-header {
   margin: 20px;
-  max-width: 80%; 
+  max-width: 80%;
   font-size: 1.2rem;
   font-weight: bold;
 }
@@ -894,21 +901,21 @@ footer {
 .popup-header .popup-skills {
   display: flex;
   margin-top: 20px;
-  justify-content: space-between;  
+  justify-content: space-between;
   min-width: 260px;
   list-style: none;
-  width: 50%;   
+  width: 50%;
 }
 
-.popup-header .popup-skills li {  
+.popup-header .popup-skills li {
   padding: 4px;
-  border: solid 2px #DFE1E6;
+  border: solid 2px #dfe1e6;
   font-size: 0.9rem;
   margin-top: 10px;
 }
 
 .cardDesktopPopup .image-project {
-  position:relative;
+  position: relative;
   width: 90%;
   max-width: 400px;
   min-width: 250px;
@@ -919,13 +926,9 @@ footer {
   position: relative;
   top: 20px;
   text-align: left;
-  margin-top: 20px; 
-  line-height: 1.2rem;  
-}
-
-.cardDesktopPopup p {    
-  min-width: 300px;
-  font-size: 0.9rem;
+  line-height: 1.2rem;
+  margin: 20px auto;
+  width: 85%;
 }
 
 .cardDesktopPopup .close {
@@ -935,106 +938,97 @@ footer {
   width: 20px;
 }
 
-.cardDesktopPopup .popup-description {  
-  width: 85%;
-  margin: 0 auto;
-  line-height: 1.2rem;  
-}
-
 .cardDesktopPopup button {
-  background-color: #F55800;
+  background-color: #f55800;
   border: none;
   padding: 10px 10px 10px 10px;
-  margin: 20px 0 0 10px;   
+  margin: 20px 0 0 10px;
   color: #fff;
   display: inline-flex;
   justify-content: space-around;
   width: 45%;
   min-width: 115px;
   font-size: 1rem;
-  height: 40px;  
+  height: 40px;
 }
 
 
 /* pop up desktop */
 
 @media only screen and (min-width: 768px) {
-.cardDesktopPopup {
-  display: grid;
-  grid-template-columns: repeat(6 1fr);
-  grid-template-rows: repeat(4 1fr);    
-  width: 80%;  
-  min-height: 530px;  
-  height: auto;
-  padding-bottom: 20px;
- 
-}
+  .cardDesktopPopup {
+    display: grid;
+    grid-template-columns: repeat(6 1fr);
+    grid-template-rows: repeat(4 1fr);
+    width: 80%;
+    min-height: 530px;
+    height: auto;
+    padding-bottom: 20px;
+  }
 
-.cardDesktopPopup .popup-header {  
-  grid-area: 1 / 1 / 2 / 7;
-  display: flex;
-  flex-direction: column; 
-}
+  .cardDesktopPopup .popup-header {
+    grid-area: 1 / 1 / 2 / 7;
+    display: flex;
+    flex-direction: column;
+  }
 
-.popup-header .popup-skills {  
-  justify-content: space-around;
-  width: 35%;
-  min-width: 330px;
-}
+  .popup-header .popup-skills {
+    justify-content: space-around;
+    width: 35%;
+    min-width: 330px;
+  }
 
-.popup-header .popup-skills li {  
-  padding: 10px;
-  border: solid 2px #DFE1E6;
-  font-size: 1rem;
-  margin-top: 10px;
-}
+  .popup-header .popup-skills li {
+    padding: 10px;
+    border: solid 2px #dfe1e6;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
 
-.cardDesktopPopup .image-project {
-  grid-area: 2 / 1 / 5 / 6;  
-  max-width: 650px;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
+  .cardDesktopPopup .image-project {
+    grid-area: 2 / 1 / 5 / 6;
+    max-width: 650px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-.cardDesktopPopup .popup-description {
-  grid-area: 2 / 6 / 5 / 7;
-  width: 85%;
-  margin: 5% 0  10px 30px;   
-  line-height: 1.5rem;  
-}
+  .cardDesktopPopup .popup-description {
+    grid-area: 2 / 6 / 5 / 7;
+    width: 85%;
+    margin: 5% 0  10px 30px;
+    line-height: 1.5rem;
+  }
 
-.cardDesktopPopup p {    
-  font-size: 1rem;
-}
+  .cardDesktopPopup p {
+    font-size: 1rem;
+  }
 
-.cardDesktopPopup button { 
-  margin: 20% 0px 10px 10px;  
-  color: #fff;
-  display: inline-flex;
-  justify-content: space-around;
-  width: 45%;
-  min-width: 120px;
-  font-size: 1rem;  
-}
+  .cardDesktopPopup button {
+    margin: 20% 0 10px 10px;
+    color: #fff;
+    display: inline-flex;
+    justify-content: space-around;
+    width: 45%;
+    min-width: 120px;
+    font-size: 1rem;
+  }
 
-.cardDesktopPopup .close:hover {
-  cursor: pointer;
-  width: 40px;
-  background-color: #e5eaf251;
-  border: solid 1px gainsboro;
-  border-radius: 1rem;
-  transition: all .4s;  
-}
+  .cardDesktopPopup .close:hover {
+    cursor: pointer;
+    width: 40px;
+    background-color: #e5eaf251;
+    border: solid 1px gainsboro;
+    border-radius: 1rem;
+    transition: all 0.4s;
+  }
 
-.cardDesktopPopup button:hover {
-  cursor: pointer;
-  color: #f55800;
-  font-weight: bold;
-  background-color: #fff5e1;
-  border: solid 1px #f55800;
-  transition: all 0.6s;
+  .cardDesktopPopup button:hover {
+    cursor: pointer;
+    color: #f55800;
+    font-weight: bold;
+    background-color: #fff5e1;
+    border: solid 1px #f55800;
+    transition: all 0.6s;
+  }
 }
-}
-
-
