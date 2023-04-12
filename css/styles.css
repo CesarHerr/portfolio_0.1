@@ -674,7 +674,7 @@ footer {
     justify-content: space-around;
     align-items: flex-start;
     transition: padding 0.6s;
-  } 
+  }
 
   .works-body h3 {
     top: 145px;
@@ -748,7 +748,7 @@ footer {
   .works-body .see-btn:active {
     background-color: #e05304;
     color: #f4f1f0;
-  }   
+  }
 
   #works-body-3 ul,
   #works-body-6 ul {
