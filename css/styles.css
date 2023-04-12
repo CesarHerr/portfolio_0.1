@@ -854,39 +854,32 @@ footer {
   position: fixed;
   z-index: 11;  
   width: 100vw;
-  height: 100vh; background-color: #232c3ca9;
-  
-
+  height: 100vh;
+  background-color: #232c3ca9;      
 }
 
 .cardDesktopPopup {
-  display: grid;
-  grid-template-columns: repeat(6 1fr);
-  grid-template-rows: repeat(4 1fr);  
+  display: flex;
+  flex-direction: column; 
   background-color: #fff; 
-  width: 80%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  
+  width: 94%;
+  margin: 0 auto;
 }
 
 .cardDesktopPopup .popup-header {  
   margin: 20px;
-  grid-area: 1 / 1 / 2 / 7;
-  display: flex;
-  flex-direction: column; 
+  max-width: 80%; 
 }
 
 .popup-header .popup-skills {
   display: flex;
-  justify-content: space-around;
-  width: 30%;
+  margin-top: 20px;
+  justify-content: space-between;  
+  min-width: 200px;
+  list-style: none;  
 }
 
-.popup-header .popup-skills li {
-  list-style: none;
+.popup-header .popup-skills li {  
   padding: 4px;
   border: solid 1px black;
   font-size: 0.9rem;
@@ -894,32 +887,110 @@ footer {
 }
 
 .cardDesktopPopup .image-project {
-  grid-area: 2 / 1 / 5 / 6;
-  width: 90%;
-  margin-left: 30px;
-  margin-bottom: 30px;
-}
-
-.cardDesktopPopup .popup-description {
-  grid-area: 2 / 6 / 5 / 7;
+  position:relative;
   width: 80%;
-  margin-left: 30px;
-  line-height: 1.8rem;  
+  max-width: 600px;
+  min-width: 250px;
+  margin: 0 auto;
 }
 
-.cardDesktopPopup button {
-  margin-top: 70px;
-  background-color: #F55800;
-  border: none;
-  padding: 10px 20px;
-  margin-left: 10px;
 
-}
 
 .cardDesktopPopup .close {
   position: absolute;
   top: 20px;
   right: 40px;
   width: 20px;
-
 }
+
+.cardDesktopPopup .popup-description {  
+  width: 85%;
+  margin: 0 auto;
+  line-height: 1.2rem;  
+}
+
+
+
+/* pop up desktop */
+
+@media only screen and (min-width: 768px) {
+.cardDesktopPopup {
+  display: grid;
+  grid-template-columns: repeat(6 1fr);
+  grid-template-rows: repeat(4 1fr);    
+  width: 80%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 530px;    
+}
+
+.cardDesktopPopup .popup-header {  
+  grid-area: 1 / 1 / 2 / 7;
+  display: flex;
+  flex-direction: column; 
+}
+
+.popup-header .popup-skills {  
+  justify-content: space-around;
+  width: 30%;
+  min-width: 300px;
+}
+
+.cardDesktopPopup .image-project {
+  grid-area: 2 / 1 / 5 / 6;
+  position:relative;  
+  width: 90%;
+  max-width: 600px;
+  min-width: 250px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cardDesktopPopup .popup-description {
+  grid-area: 2 / 6 / 5 / 7;
+  width: 85%;
+  margin-left: 30px;
+  line-height: 1.5rem;  
+}
+
+.cardDesktopPopup p {  
+  left: 60%;
+  min-width: 270px;
+}
+
+.cardDesktopPopup button {
+  background-color: #F55800;
+  border: none;
+  padding: 10px 10px 10px 0;
+  margin: 20% 0 10px 10px;  
+  color: #fff;
+  display: inline-flex;
+  justify-content: space-around;
+  width: 40%;
+  min-width: 115px;
+  font-size: 1rem;  
+}
+
+.cardDesktopPopup .close:hover {
+  cursor: pointer;
+  width: 40px;
+  background-color: #e5eaf251;
+  border: solid 1px gainsboro;
+  border-radius: 1rem;
+  transition: all .4s;  
+}
+
+.cardDesktopPopup button:hover {
+  cursor: pointer;
+  color: #f55800;
+  font-weight: bold;
+  background-color: #fff5e1;
+  border: solid 1px #f55800;
+  transition: all 0.6s;
+}
+}
+
+
