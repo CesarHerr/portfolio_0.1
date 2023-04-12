@@ -34,7 +34,7 @@ header {
   align-items: center;
   background: #3c3a39;
   padding: 20px 0;
-  z-index: 100;
+  z-index: 10;
 }
 
 .logo-header {
@@ -183,7 +183,8 @@ a:visited {
   font-weight: 600;
 }
 
-.see-btn {
+.see-btn,
+.get-my-resume-btn {
   transition: background-color 0.7s;
 }
 
@@ -281,7 +282,7 @@ a:visited {
   color: #fff;
 }
 
-.about-head .see-btn {
+.get-my-resume-btn {
   position: relative;
   top: -155px;
   width: 50%;
@@ -316,7 +317,8 @@ a:visited {
   color: #fff;
 }
 
-.see-btn:hover {
+.see-btn:hover,
+.get-my-resume-btn:hover {
   cursor: pointer;
   color: #f55800;
   font-weight: bold;
@@ -324,7 +326,8 @@ a:visited {
   border: solid 1px #f55800;
 }
 
-.see-btn:active {
+.see-btn:active,
+.get-my-resume-btn:active {
   background-color: #e05304;
   color: #f4f1f0;
 }
@@ -425,6 +428,11 @@ footer {
   height: 90px;
 }
 
+.cardDesktopPopup p {
+  min-width: 300px;
+  font-size: 0.9rem;
+}
+
 .menu li a p {
   display: inline;
 }
@@ -511,7 +519,19 @@ footer {
   display: none;
 }
 
+.see-desktop {
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
+  .see-desktop {
+    display: inline;
+  }
+
+  .see-mobile {
+    display: none;
+  }
+
   header {
     height: 72px;
     padding: 0 5%;
@@ -644,21 +664,16 @@ footer {
   }
 
   .works-body {
-    width: 25%;
+    width: 30%;
     height: 465px;
     position: relative;
     float: left;
-    margin: 0.8%;
-    min-width: 310px;
+    min-width: 320px;
     margin-bottom: 20px;
     justify-content: space-around;
-    align-items: flex-start;
     transition: padding 0.6s;
-  }
-
-  #works-body-first {
-    background-image: url(../images/fourth.png);
-    align-items: center;
+    transform: translate(10%, 0);
+    margin-left: 15px;
   }
 
   .works-body h3 {
@@ -686,7 +701,7 @@ footer {
     min-width: 370px;
   }
 
-  .about-head .see-btn {
+  .get-my-resume-btn {
     top: 30px;
     width: 15%;
     font-weight: 700;
@@ -713,6 +728,12 @@ footer {
     color: #fff;
   }
 
+  .works-body:hover .box-body li p {
+    color: transparent;
+    border: none;
+    background-color: transparent;
+  }
+
   .works-body .see-btn:hover {
     background-color: #fff5e1;
     border: solid 1px #f55800;
@@ -735,44 +756,8 @@ footer {
     color: #f4f1f0;
   }
 
-  #works-body-2,
-  #works-body-5 {
-    background-image: url(../images/second.png);
-  }
-
-  #works-body-3,
-  #works-body-6 {
-    background-image: url(../images/third.png);
-  }
-
-  #works-body-4 {
-    background-image: url(../images/fourth.png);
-  }
-
-  #works-body-3 ul,
-  #works-body-6 ul {
-    margin-bottom: -10px;
-  }
-
   .small-data {
     display: none;
-  }
-
-  #works-body-first,
-  #works-body-4 {
-    margin-left: 10%;
-  }
-
-  @media only screen and (max-width: 1075px) {
-    #works-body-3,
-    #works-body-first,
-    #works-body-5 {
-      margin-left: 10%;
-    }
-
-    #works-body-4 {
-      margin-left: 0.8%;
-    }
   }
 
   .about {
@@ -847,5 +832,172 @@ footer {
     height: 50px;
     margin: 0;
     padding: 0;
+  }
+}
+
+/* pop up styles, mobile */
+
+.popup-container {
+  position: fixed;
+  z-index: 11;
+  width: 100vw;
+  height: 100vh;
+  background-color: #232c3ca9;
+}
+
+.cardDesktopPopup {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 90%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  padding-bottom: 30px;
+  color: #172b4d;
+}
+
+.cardDesktopPopup .popup-header {
+  margin: 20px;
+  max-width: 80%;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: 'Crete Round', serif;
+}
+
+.popup-header .popup-skills {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  min-width: 260px;
+  list-style: none;
+  width: 50%;
+}
+
+.popup-header .popup-skills li {
+  padding: 4px;
+  border: solid 2px #dfe1e6;
+  font-size: 0.9rem;
+  color: #172b4d;
+  margin-top: 10px;
+}
+
+.cardDesktopPopup .image-project {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  min-width: 250px;
+  margin: 0 auto;
+}
+
+.cardDesktopPopup .popup-description {
+  position: relative;
+  top: 20px;
+  text-align: left;
+  line-height: 1.2rem;
+  margin: 20px auto;
+  width: 85%;
+}
+
+.cardDesktopPopup .close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  width: 20px;
+}
+
+.cardDesktopPopup button {
+  background-color: #f55800;
+  border: none;
+  padding: 10px 10px 10px 10px;
+  margin: 20px 0 0 10px;
+  color: #fff;
+  display: inline-flex;
+  justify-content: space-around;
+  width: 45%;
+  min-width: 115px;
+  font-size: 1rem;
+  height: 40px;
+}
+
+/* pop up desktop */
+
+@media only screen and (min-width: 768px) {
+  .cardDesktopPopup {
+    display: grid;
+    grid-template-columns: repeat(6 1fr);
+    grid-template-rows: repeat(4 1fr);
+    width: 80%;
+    min-height: 530px;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .cardDesktopPopup .popup-header {
+    grid-area: 1 / 1 / 2 / 7;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .popup-header .popup-skills {
+    justify-content: space-around;
+    width: 35%;
+    min-width: 330px;
+    margin-top: 0;
+  }
+
+  .popup-header .popup-skills li {
+    padding: 10px;
+    border: solid 2px #dfe1e6;
+    font-size: 1rem;
+  }
+
+  .cardDesktopPopup .image-project {
+    grid-area: 2 / 1 / 5 / 6;
+    max-width: 650px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .cardDesktopPopup .popup-description {
+    grid-area: 2 / 6 / 5 / 7;
+    width: 85%;
+    margin: -20px 0  10px 30px;
+    line-height: 1.5rem;
+  }
+
+  .cardDesktopPopup p {
+    font-size: 1rem;
+  }
+
+  .cardDesktopPopup button {
+    margin: 20% 0 10px 10px;
+    color: #fff;
+    display: inline-flex;
+    justify-content: space-around;
+    width: 45%;
+    min-width: 120px;
+    font-size: 1rem;
+  }
+
+  .cardDesktopPopup .close:hover {
+    cursor: pointer;
+    width: 40px;
+    background-color: #e5eaf251;
+    border: solid 1px gainsboro;
+    border-radius: 1rem;
+    transition: all 0.4s;
+  }
+
+  .cardDesktopPopup button:hover {
+    cursor: pointer;
+    color: #f55800;
+    font-weight: bold;
+    background-color: #fff5e1;
+    border: solid 1px #f55800;
+    transition: all 0.6s;
   }
 }
