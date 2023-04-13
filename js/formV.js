@@ -16,3 +16,8 @@ formValidator.addEventListener("submit", (event) => {
     }  
   
 });
+
+emailValidator.addEventListener('click', () => {
+    error.removeChild(errorMessage);
+
+})
