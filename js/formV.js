@@ -10,10 +10,11 @@ formValidator.addEventListener("submit", (event) => {
       event.preventDefault(); 
       
       errorMessage.innerHTML =`
-    Please use only lowercase letters in your email address `;
-  
-      error.appendChild(errorMessage);
-    }  
+      <div class="triangle"></div>
+      <span>Please use only lowercase letters in your email address </span>`;
+    
+        error.appendChild(errorMessage);
+      } 
   
 });
 

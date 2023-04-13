@@ -1003,3 +1003,16 @@ footer {
 }
 
 /* validation message */
+
+.triangle {
+  border: solid 1px #9e9696;
+  background-color: #ffc4c4;
+  border-bottom-color: transparent;
+  border-right-color: transparent ;
+  width: 20px;
+  height: 20px;  
+  position: relative;
+  top: 4px;
+  left: 15px;
+  transform: rotate(45deg);   
+}
