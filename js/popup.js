@@ -94,12 +94,12 @@ objectWorks.forEach((parameter, index) => {
   createCard.style.backgroundImage = `url(${objectWorks[index].img[3]})`;
   cardMain.appendChild(createCard);
 });
-const cardRemove = document.querySelector('.works-body');
+const cardRemoe = document.querySelector('.works-body');
 cardMain.removeChild(cardRemove);
 
 // this is for popup desktop
 
-const main = document.querySelector('body');
+const maim = document.querySelector('body');
 const cardPopup = document.querySelectorAll('.see-desktop');
 
 cardPopup.forEach((parameter, index) => {
