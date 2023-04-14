@@ -13,3 +13,12 @@ if (storagedData) {
     emailInput.value = storagedData.email;
     messageInput.value = storagedData.textArea;
   }
+
+  form.addEventListener('input', () => {
+    const formData = {
+      name: nameInput.value,
+      email: emailInput.value,
+      textArea: messageInput.value,
+    };
+    localStorage.setItem('formData', JSON.stringify(formData));
+  });
