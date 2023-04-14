@@ -15,7 +15,6 @@ formValidator.addEventListener('submit', (event) => {
     error.appendChild(errorMessage);
   }
 });
-
 emailValidator.addEventListener('click', () => {
   errorMessage.innerHTML = '';
 });
