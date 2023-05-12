@@ -956,10 +956,9 @@ footer {
 
   .cardDesktopPopup .image-project {
     grid-area: 2 / 1 / 5 / 6;
-    max-width: 650px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    max-width: 750px;
+    min-width: 300px;
+    margin: 0 auto;
   }
 
   .cardDesktopPopup .popup-description {
