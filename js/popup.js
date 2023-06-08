@@ -134,7 +134,7 @@ cardPopup.forEach((parameter, index) => {
     document.body.style.overflow = 'hidden';
     const close = document.querySelector('.close');
     close.addEventListener('click', () => {
-    document.body.style.overflow = 'auto';  
+      document.body.style.overflow = 'auto';
       main.removeChild(cards);
     });
   });
@@ -175,7 +175,7 @@ cardPopupMobile.forEach((parameter, index) => {
     document.body.style.overflow = 'hidden';
     const close = document.querySelector('.close');
     close.addEventListener('click', () => {
-    document.body.style.overflow = 'auto';  
+      document.body.style.overflow = 'auto';
       main.removeChild(cards);
     });
   });
