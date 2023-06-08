@@ -210,7 +210,7 @@ a:visited {
 
 .works-header .see-btn {
   width: 40%;
-  align-self: flex-start;
+  align-self: flex-start;  
 }
 
 .works-body {
@@ -218,9 +218,9 @@ a:visited {
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: space-between;
-  align-items: center;
-  padding: 0 10px;
+  align-items: center; 
   border-radius: 0.7rem;
+  padding: 0 10px;
 }
 
 .works-body h3 {
@@ -335,8 +335,6 @@ a:visited {
   font-weight: bold;
   background-color: #fff5e1;
   border: solid 1px #f55800;
-  transform: scale(1.2, 1.2);
-  transition: all 0.4s ease-in;
 }
 
 .see-btn:active,
@@ -609,14 +607,14 @@ footer {
   .works {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 0.5rem;    
   }
 
   .works-header {
     margin: 0 10%;
     display: grid;
     grid-template: repeat(11, 58px) / 35% 25% 40%;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   .title-works-desktop {
@@ -681,13 +679,18 @@ footer {
     margin-top: 30px;
   }
 
+  .works-header > .see-btn:hover {
+    transform: scale(1.2, 1.2);
+    transition: all 0.5s ease-in;
+  }
+
   .works-body {
     width: 30%;
     height: 465px;    
     min-width: 320px;
     margin-bottom: 20px;
-    transition: padding 0.6s;
-    transform: translate(10%, 0);
+    transition: all 0.6s;
+    transform: translate(0%, 0);
   }
 
   .works-body h3 {
@@ -707,7 +710,9 @@ footer {
   .works-body:hover {
     border: solid 2px #1c1a19;
     cursor: pointer;
-    padding: 10px;   
+    padding: 10px;
+    transform: scale(1.05,1.05);
+    z-index: 9;
   }
 
   .box-body {
@@ -728,6 +733,11 @@ footer {
     width: 15%;
     font-weight: 700;
     min-width: 150px;
+  }
+
+  .get-my-resume-btn:hover {
+    transform: scale(1.2, 1.2);
+    transition: all 0.4s ease-in;
   }
 
   .skills ul {
