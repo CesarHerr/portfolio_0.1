@@ -7,7 +7,7 @@ const objectWorks = [
     buttonClose: 'images/ClosePopup.svg',
     btnSeeLive: 'https://cesarherr.github.io/CapstoneModule1/',
     btnSeeSource: 'https://github.com/CesarHerr/CapstoneModule1',
-    description: ["This website is crafted using a 'Mobile first' design approach, developed only with HTML, JavaScript, and Sass following the best practice in each instance. It boasts a fully responsive layout, ensuring seamless viewing and interaction across various devices. The website delivers optimal performance and exceptional user experience."],
+    description: ["This website is crafted using a 'Mobile first' design approach, developed only with HTML, JavaScript, and Sass following the best practice in each instance. It boasts a fully responsive layout, ensuring seamless viewing and interaction across various devices. The website delivers optimal performance and exceptional user experience.", "This website is crafted using a 'Mobile first' design approach, developed only with HTML, JavaScript, and Sass following the best practice in each instance. It boasts a fully responsive layout, ensuring seamless viewing and interaction across various devices. The website delivers optimal performance and exceptional user experience."],
   },
   {
     id: 'card_1',
@@ -108,7 +108,7 @@ cardPopup.forEach((parameter, index) => {
     cards.className = 'popup-container';
 
     cards.innerHTML = `
-    <div class="cardDesktopPopup">
+    <div class="cardPopup">
         <img class="close" src="${objectWorks[index].buttonClose}" alt="">   
         <div class="popup-header">
             <h2>${objectWorks[index].title[0]}</h2>        
@@ -131,14 +131,16 @@ cardPopup.forEach((parameter, index) => {
     </div>`;
 
     main.insertAdjacentElement('afterBegin', cards);
+    document.body.style.overflow = 'hidden';
     const close = document.querySelector('.close');
     close.addEventListener('click', () => {
+    document.body.style.overflow = 'auto';  
       main.removeChild(cards);
     });
   });
 });
 
-// popup movile version
+// popup mobile version
 
 const cardPopupMobile = document.querySelectorAll('.see-mobile');
 
@@ -148,7 +150,7 @@ cardPopupMobile.forEach((parameter, index) => {
     cards.className = 'popup-container';
 
     cards.innerHTML = `
-    <div class="cardDesktopPopup">
+    <div class="cardPopup">
         <img class="close" src="${objectWorks[index].buttonClose}" alt="">   
         <div class="popup-header">
             <h2>${objectWorks[index].title[1]}</h2>        
@@ -170,8 +172,10 @@ cardPopupMobile.forEach((parameter, index) => {
         </div>
     </div>`;
     main.insertAdjacentElement('afterBegin', cards);
+    document.body.style.overflow = 'hidden';
     const close = document.querySelector('.close');
     close.addEventListener('click', () => {
+    document.body.style.overflow = 'auto';  
       main.removeChild(cards);
     });
   });

@@ -149,7 +149,7 @@ a:visited {
 
 .works-header h3 {
   font-family: 'Crete Round', serif;
-  font-size: 36px;
+  font-size: 1.5rem;
   align-self: flex-start;
 }
 
@@ -198,13 +198,17 @@ a:visited {
   transition: background-color 0.7s;
 }
 
-.works-header .see-btn {
-  width: 40%;
+.see-btn {
   padding: 14px 5px;
   border: none;
   background-color: #ff6b00;
   color: #fff;
   font-size: 20px;
+  border-radius: 0.7rem;
+}
+
+.works-header .see-btn {
+  width: 40%;
   align-self: flex-start;
 }
 
@@ -244,11 +248,6 @@ a:visited {
 
 .works-body .see-btn {
   width: calc(100% + 20px);
-  padding: 15px;
-  border: none;
-  background-color: #ff6b00;
-  color: #fff;
-  font-size: 20px;
 }
 
 .about {
@@ -438,7 +437,7 @@ footer {
   height: 90px;
 }
 
-.cardDesktopPopup p {
+.cardPopup p {
   min-width: 300px;
   font-size: 0.9rem;
 }
@@ -675,7 +674,6 @@ footer {
     grid-area: 10 / 3 / 12 / 4;
     width: 150px;
     margin-top: 30px;
-    border-radius: 0.7rem;
   }
 
   .works-body {
@@ -858,9 +856,10 @@ footer {
   width: 100vw;
   height: 100vh;
   background-color: #232c3ca9;
+  backdrop-filter: blur(5px);  
 }
 
-.cardDesktopPopup {
+.cardPopup {
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -872,9 +871,10 @@ footer {
   height: auto;
   padding-bottom: 30px;
   color: #172b4d;
+  border-radius: 3rem 0.5rem 3rem 0.5rem;
 }
 
-.cardDesktopPopup .popup-header {
+.cardPopup .popup-header {
   margin: 20px;
   max-width: 80%;
   font-size: 1.2rem;
@@ -897,17 +897,27 @@ footer {
   font-size: 0.9rem;
   color: #172b4d;
   margin-top: 10px;
+  border-radius: 0.4rem;
 }
 
-.cardDesktopPopup .image-project {
+.cardPopup .image-project {
   position: relative;
   width: 90%;
   max-width: 400px;
   min-width: 250px;
   margin: 0 auto;
+  border-radius: 0.7rem;
+  box-shadow:
+  -7.3px -1.4px 7.1px rgba(0, 0, 0, 0.026),
+  -14.4px -2.8px 14.6px rgba(0, 0, 0, 0.042),
+  -21px -4px 23.4px rgba(0, 0, 0, 0.053),
+  -26.4px -5.1px 36px rgba(0, 0, 0, 0.061),
+  -27.7px -5.3px 59.6px rgba(0, 0, 0, 0.07),
+  52px 10px 106px rgba(0, 0, 0, 0.08)
+;
 }
 
-.cardDesktopPopup .popup-description {
+.cardPopup .popup-description {
   position: relative;
   top: 20px;
   text-align: left;
@@ -916,14 +926,18 @@ footer {
   width: 85%;
 }
 
-.cardDesktopPopup .close {
+.popup-description button {
+  border-radius: 0.4rem;
+}
+
+.cardPopup .close {
   position: absolute;
   top: 20px;
   right: 40px;
   width: 20px;
 }
 
-.cardDesktopPopup button {
+.cardPopup button {
   background-color: #f55800;
   border: none;
   padding: 10px 10px 10px 10px;
@@ -940,7 +954,7 @@ footer {
 /* pop up desktop */
 
 @media only screen and (min-width: 768px) {
-  .cardDesktopPopup {
+  .cardPopup {
     display: grid;
     grid-template-columns: repeat(6 1fr);
     grid-template-rows: repeat(4 1fr);
@@ -950,7 +964,7 @@ footer {
     padding-bottom: 20px;
   }
 
-  .cardDesktopPopup .popup-header {
+  .cardPopup .popup-header {
     grid-area: 1 / 1 / 2 / 7;
     display: flex;
     flex-direction: column;
@@ -969,25 +983,25 @@ footer {
     font-size: 1rem;
   }
 
-  .cardDesktopPopup .image-project {
+  .cardPopup .image-project {
     grid-area: 2 / 1 / 5 / 6;
     max-width: 750px;
     min-width: 300px;
     margin: 0 auto;
   }
 
-  .cardDesktopPopup .popup-description {
+  .cardPopup .popup-description {
     grid-area: 2 / 6 / 5 / 7;
     width: 85%;
     margin: -20px 0  10px 30px;
     line-height: 1.5rem;
   }
 
-  .cardDesktopPopup p {
+  .cardPopup p {
     font-size: 1rem;
   }
 
-  .cardDesktopPopup button {
+  .cardPopup button {
     margin: 20% 0 10px 10px;
     color: #fff;
     display: inline-flex;
@@ -997,7 +1011,7 @@ footer {
     font-size: 1rem;
   }
 
-  .cardDesktopPopup .close:hover {
+  .cardPopup .close:hover {
     cursor: pointer;
     width: 40px;
     background-color: #e5eaf251;
@@ -1006,7 +1020,7 @@ footer {
     transition: all 0.4s;
   }
 
-  .cardDesktopPopup button:hover {
+  .cardPopup button:hover {
     cursor: pointer;
     color: #f55800;
     font-weight: bold;
