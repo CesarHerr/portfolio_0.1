@@ -1,7 +1,7 @@
 const objectWorks = [
   {
     id: 'card_0',
-    title: ['Keeping track of hundreds  of components website', 'Multi Post Stories', 'Website Portfolio', 'Profesional Art Printing Data'],
+    title: ['Keeping track of hundreds  of components website', 'Multi Post Stories', 'Website Portfolio', 'Professional Art Printing Data'],
     skills: ['HTML', 'JavaScript', 'SASS', 'Ruby'],
     img: ['images/Capstone2.png', 'images/popicon.svg', 'images/gitpop.svg', 'images/third.png'],
     buttonClose: 'images/ClosePopup.svg',
@@ -11,7 +11,7 @@ const objectWorks = [
   },
   {
     id: 'card_1',
-    title: ['Keeping track of hundreds  of components website', 'Multi Post Stories', 'Profesional Art Printing Data More', 'Profesional Art Printing Data'],
+    title: ['Keeping track of hundreds  of components website', 'Multi Post Stories', 'Professional Art Printing Data More', 'Professional Art Printing Data'],
     skills: ['HTML', 'Bootstrap', 'Ruby on Rails', 'Ruby'],
     img: ['images/PopupDesktop.png', 'images/popicon.svg', 'images/gitpop.svg', 'images/third.png'],
     buttonClose: 'images/ClosePopup.svg',
@@ -21,7 +21,7 @@ const objectWorks = [
   },
   {
     id: 'card_2',
-    title: ['Keeping track of hundreds  of components website', 'Multi Post Stories', 'Data Dashboard Healthcare', 'Profesional Art Printing Data'],
+    title: ['Keeping track of hundreds  of components website', 'Multi Post Stories', 'Data Dashboard Healthcare', 'Professional Art Printing Data'],
     skills: ['HTML', 'Bootstrap', 'Ruby on Rails', 'Ruby'],
     img: ['images/PopupDesktop.png', 'images/popicon.svg', 'images/gitpop.svg', 'images/third.png'],
     buttonClose: 'images/ClosePopup.svg',
@@ -31,7 +31,7 @@ const objectWorks = [
   },
   {
     id: 'card_3',
-    title: ['Keeping track of hundreds  of components website', 'Multi Post Stories', 'Website Portfolio', 'Profesional Art Printing Data'],
+    title: ['Keeping track of hundreds  of components website', 'Multi Post Stories', 'Website Portfolio', 'Professional Art Printing Data'],
     skills: ['HTML', 'Bootstrap', 'Ruby on Rails', 'Ruby'],
     img: ['images/PopupDesktop.png', 'images/popicon.svg', 'images/gitpop.svg', 'images/third.png'],
     buttonClose: 'images/ClosePopup.svg',
@@ -41,7 +41,7 @@ const objectWorks = [
   },
   {
     id: 'card_4',
-    title: ['Keeping track of hundreds  of components website', 'Multi Post Stories', 'Profesional Art Printing Data More', 'Profesional Art Printing Data'],
+    title: ['Keeping track of hundreds  of components website', 'Multi Post Stories', 'Professional Art Printing Data More', 'Professional Art Printing Data'],
     skills: ['HTML', 'Bootstrap', 'Ruby on Rails', 'Ruby'],
     img: ['images/PopupDesktop.png', 'images/popicon.svg', 'images/gitpop.svg', 'images/third.png'],
     buttonClose: 'images/ClosePopup.svg',
@@ -51,7 +51,7 @@ const objectWorks = [
   },
   {
     id: 'card_5',
-    title: ['Keeping track of hundreds  of components website', 'Multi Post Stories', 'Data Dashboard Healthcare', 'Profesional Art Printing Data'],
+    title: ['Keeping track of hundreds  of components website', 'Multi Post Stories', 'Data Dashboard Healthcare', 'Professional Art Printing Data'],
     skills: ['HTML', 'Bootstrap', 'Ruby on Rails', 'Ruby'],
     img: ['images/PopupDesktop.png', 'images/popicon.svg', 'images/gitpop.svg', 'images/third.png'],
     buttonClose: 'images/ClosePopup.svg',
@@ -61,7 +61,7 @@ const objectWorks = [
   },
   {
     id: 'card_6',
-    title: ['Keeping track of hundreds  of components website', 'Multi Post Stories', 'Website Portfolio', 'Profesional Art Printing Data'],
+    title: ['Keeping track of hundreds  of components website', 'Multi Post Stories', 'Website Portfolio', 'Professional Art Printing Data'],
     skills: ['HTML', 'Bootstrap', 'Ruby on Rails', 'Ruby'],
     img: ['images/PopupDesktop.png', 'images/popicon.svg', 'images/gitpop.svg', 'images/third.png'],
     buttonClose: 'images/ClosePopup.svg',
@@ -118,7 +118,7 @@ cardPopup.forEach((parameter, index) => {
                 <li>${objectWorks[index].skills[2]}</li>
             </ul>
         </div>
-        <img class="image-project" src="${objectWorks[index].img[0]}" alt="imagen_project">
+        <img class="image-project" src="${objectWorks[index].img[0]}" alt="image_project">
         <div class="popup-description">
             <p>${objectWorks[index].description[0]}</p>        
             <a href="${objectWorks[index].btnSeeLive}">
@@ -160,7 +160,7 @@ cardPopupMobile.forEach((parameter, index) => {
                 <li>${objectWorks[index].skills[2]}</li>
             </ul>
         </div>
-        <img class="image-project" src="${objectWorks[index].img[0]}" alt="imagen_project">
+        <img class="image-project" src="${objectWorks[index].img[0]}" alt="image_project">
         <div class="popup-description">
             <p>${objectWorks[index].description[1]}</p>        
             <a href="${objectWorks[index].btnSeeLive}">

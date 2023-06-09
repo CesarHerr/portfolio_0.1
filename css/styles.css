@@ -552,10 +552,10 @@ footer {
 
   header nav {
     width: 30%;
-    min-width: 240px;
+    min-width: 340px;
   }
 
-  nav ul {
+  .menu {
     display: flex;
     list-style: none;
     justify-content: space-between;
@@ -569,6 +569,33 @@ footer {
     display: flex;
     justify-content: space-between;
     width: 100px;
+  }
+
+  .menu li:hover {
+    box-shadow:
+      12.8px 20.6px 5.3px rgba(0, 0, 0, 0.194),
+      23.3px 37.6px 17.9px rgba(0, 0, 0, 0.286),
+      52px 84px 80px rgba(0, 0, 0, 0.48);
+    transform: scale(2, 2);
+    transition: all 0.4s ease-in-out;
+  }
+
+  .social-link img {
+    margin-bottom: 12px;
+    height: 1.2rem;
+  }
+
+  .link-contact:hover img {
+    display: none;
+  }
+
+  .linkedLogo {
+    transition: all 0.3s ease-in;
+    transform: scale(1.5, 1.5);
+    box-shadow:
+      12.8px 20.6px 5.3px rgba(0, 0, 0, 0.194),
+      23.3px 37.6px 17.9px rgba(0, 0, 0, 0.286),
+      52px 84px 80px rgba(0, 0, 0, 0.48);
   }
 
   .headline {
@@ -592,11 +619,6 @@ footer {
     float: left;
     bottom: 35%;
     margin-left: 20px;
-  }
-
-  .social-link img {
-    margin-bottom: 12px;
-    height: 1.2rem;
   }
 
   .description-headline {
@@ -1068,4 +1090,15 @@ footer {
 
 .message {
   position: absolute;
+}
+
+.linkedPortfolio,
+.linkedAbout,
+.linkedContact {
+  transition: all 0.3s ease-in;
+  transform: scale(2, 2);
+  box-shadow:
+    12.8px 20.6px 5.3px rgba(0, 0, 0, 0.194),
+    23.3px 37.6px 17.9px rgba(0, 0, 0, 0.286),
+    52px 84px 80px rgba(0, 0, 0, 0.48);
 }

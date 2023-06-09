@@ -1,19 +1,19 @@
 // storage
-const formImput = document.querySelector('form');
+const formInput = document.querySelector('form');
 const nameInput = document.getElementById('name');
 const emailInput = document.getElementById('email');
 const messageInput = document.querySelector('textarea');
 
 const data = localStorage.getItem('formData');
-const storagedData = JSON.parse(data);
+const storedData = JSON.parse(data);
 
-if (storagedData) {
-  nameInput.value = storagedData.name;
-  emailInput.value = storagedData.email;
-  messageInput.value = storagedData.textArea;
+if (storedData) {
+  nameInput.value = storedData.name;
+  emailInput.value = storedData.email;
+  messageInput.value = storedData.textArea;
 }
 
-formImput.addEventListener('input', () => {
+formInput.addEventListener('input', () => {
   const formData = {
     name: nameInput.value,
     email: emailInput.value,
