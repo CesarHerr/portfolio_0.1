@@ -34,12 +34,14 @@
 # 📖 [Portfolio] <a name="about-project"></a>
 
 
-**[Portfolio]** In this portfolio, you can find the work that I have been developing throughout my learning experience, and you can also find my contact information. In this time I started creating the toolbar and headlines sections, then I created the Work and About sections.
+**[Portfolio]** This portfolio is a collection of projects showcasing my experience in designing and developing interactive and functional websites. It includes a variety of examples ranging from corporate websites to complex web applications, using technologies such as HTML, CSS, JavaScript, and frameworks like React. Additionally, visitors can find details about my focus on usability, responsive design, and performance optimization.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ```
 1.- HTML.
+
+2.- JavasCript.
 
 2.- CSS.
 
@@ -53,6 +55,7 @@
   <ul>
     <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
     <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+    <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript">JavaScript</a></li>
    </ul>
 </details>
 
@@ -62,6 +65,9 @@
 
 
 ```
+- **[Responsive Design]**
+- **[Mobile first Design]**
+- **[Dom Manipulation]**
 - **[application Deploy ]**
 ```
 
@@ -72,7 +78,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- https://cesarherr.github.io/
+- https://cesarherr.github.io/portfolio
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

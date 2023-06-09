@@ -34,7 +34,7 @@ header {
   align-items: center;
   background: #3c3a39;
   padding: 20px 0;
-  z-index: 100;
+  z-index: 10;
 }
 
 .logo-header {
@@ -56,7 +56,7 @@ header {
 }
 
 .hamburger-btn:hover,
-.hambuguer-close {
+.close:hover {
   cursor: pointer;
 }
 
@@ -136,11 +136,19 @@ a:visited {
 
 .works-img {
   width: 100%;
+  border-radius: 1rem;
+  box-shadow:
+    -7.3px -1.4px 7.1px rgba(0, 0, 0, 0.026),
+    -14.4px -2.8px 14.6px rgba(0, 0, 0, 0.042),
+    -21px -4px 23.4px rgba(0, 0, 0, 0.053),
+    -26.4px -5.1px 36px rgba(0, 0, 0, 0.061),
+    -27.7px -5.3px 59.6px rgba(0, 0, 0, 0.07),
+    52px 10px 106px rgba(0, 0, 0, 0.08);
 }
 
 .works-header h3 {
   font-family: 'Crete Round', serif;
-  font-size: 36px;
+  font-size: 1.5rem;
   align-self: flex-start;
 }
 
@@ -181,19 +189,26 @@ a:visited {
   border: solid 1px #8993a4;
   padding: 10px 12px;
   font-weight: 600;
+  border-radius: 0.7rem;
+}
+
+.see-btn,
+.get-my-resume-btn,
+.contact_button {
+  transition: background-color 0.7s;
+  border-radius: 0.7rem;
 }
 
 .see-btn {
-  transition: background-color 0.7s;
-}
-
-.works-header .see-btn {
-  width: 40%;
   padding: 14px 5px;
   border: none;
   background-color: #ff6b00;
   color: #fff;
   font-size: 20px;
+}
+
+.works-header .see-btn {
+  width: 40%;
   align-self: flex-start;
 }
 
@@ -203,8 +218,8 @@ a:visited {
   background-size: cover;
   justify-content: space-between;
   align-items: center;
+  border-radius: 0.7rem;
   padding: 0 10px;
-  background-color: #575452;
 }
 
 .works-body h3 {
@@ -229,15 +244,11 @@ a:visited {
   border: none;
   padding: 10px 12px;
   color: #fff;
+  border-radius: 0.5rem;
 }
 
 .works-body .see-btn {
   width: calc(100% + 20px);
-  padding: 15px;
-  border: none;
-  background-color: #ff6b00;
-  color: #fff;
-  font-size: 20px;
 }
 
 .about {
@@ -281,7 +292,7 @@ a:visited {
   color: #fff;
 }
 
-.about-head .see-btn {
+.get-my-resume-btn {
   position: relative;
   top: -155px;
   width: 50%;
@@ -316,7 +327,8 @@ a:visited {
   color: #fff;
 }
 
-.see-btn:hover {
+.see-btn:hover,
+.get-my-resume-btn:hover {
   cursor: pointer;
   color: #f55800;
   font-weight: bold;
@@ -324,7 +336,8 @@ a:visited {
   border: solid 1px #f55800;
 }
 
-.see-btn:active {
+.see-btn:active,
+.get-my-resume-btn:active {
   background-color: #e05304;
   color: #f4f1f0;
 }
@@ -389,7 +402,6 @@ textarea::placeholder {
   line-height: 26px;
   color: #fff;
   background: #ff6b00;
-  transition: padding 1s;
 }
 
 .contact_button:hover {
@@ -397,7 +409,8 @@ textarea::placeholder {
   border: 1px solid #f55800;
   cursor: pointer;
   color: #f55800;
-  padding: 15px;
+  transform: scale(1.2, 1.2);
+  transition: all 0.4s ease-in;
 }
 
 .contact_button:active {
@@ -425,13 +438,17 @@ footer {
   height: 90px;
 }
 
+.cardPopup p {
+  min-width: 300px;
+  font-size: 0.9rem;
+}
+
 .menu li a p {
   display: inline;
 }
 
 @media only screen and (max-width: 767px) {
   .work-line,
-  .works-img-full,
   .full-data {
     display: none;
   }
@@ -493,7 +510,7 @@ footer {
     display: block;
   }
 
-  .hambuguer-close.close {
+  .hamburger-close.close {
     display: block;
     position: absolute;
     background: none;
@@ -502,16 +519,28 @@ footer {
     top: -30px;
   }
 
-  .hambuguer-close.close img {
+  .hamburger-close.close img {
     width: 20px;
   }
 }
 
-.hambuguer-close {
+.hamburger-close {
+  display: none;
+}
+
+.see-desktop {
   display: none;
 }
 
 @media only screen and (min-width: 768px) {
+  .see-desktop {
+    display: inline;
+  }
+
+  .see-mobile {
+    display: none;
+  }
+
   header {
     height: 72px;
     padding: 0 5%;
@@ -592,15 +621,16 @@ footer {
   }
 
   .works {
-    display: inline;
-    background-color: #e05304;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
   }
 
   .works-header {
     margin: 0 10%;
     display: grid;
     grid-template: repeat(11, 58px) / 35% 25% 40%;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   .title-works-desktop {
@@ -623,18 +653,22 @@ footer {
   }
 
   .works-img {
-    display: none;
-  }
-
-  .works-img-full {
     grid-area: 5 / 1 / 11 / 3;
     width: 95%;
-    background-color: #e05304;
+    border-radius: 1.5rem;
+    box-shadow:
+      -10.3px -9.6px 8.2px rgba(0, 0, 0, 0.026),
+      -20.4px -19.1px 17.7px rgba(0, 0, 0, 0.042),
+      -29.9px -27.9px 30.2px rgba(0, 0, 0, 0.053),
+      -37.5px -35px 49.9px rgba(0, 0, 0, 0.061),
+      -39.4px -36.8px 87.7px rgba(0, 0, 0, 0.07),
+      74px 69px 159px rgba(0, 0, 0, 0.08);
   }
 
   .works-header h3 {
     grid-area: 5 / 3 / 6 / 4;
-    min-width: 290px;
+    min-width: 316px;
+    font-size: 1.5rem;
   }
 
   .works-header > p {
@@ -660,22 +694,29 @@ footer {
     margin-top: 30px;
   }
 
-  .works-body {
-    width: 25%;
-    height: 465px;
-    position: relative;
-    float: left;
-    margin: 0.8%;
-    min-width: 310px;
-    margin-bottom: 20px;
-    justify-content: space-around;
-    align-items: flex-start;
-    transition: padding 0.6s;
+  .works-body .see-btn {
+    padding: 20px 15px;
+    background-color: transparent;
+    color: transparent;
+    margin: 0 0 -20px 0;
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    bottom: 20px;
   }
 
-  #works-body-first {
-    background-image: url(../images/fourth.png);
-    align-items: center;
+  .works-header > .see-btn:hover {
+    transform: scale(1.2, 1.2);
+    transition: all 0.5s ease-in;
+  }
+
+  .works-body {
+    width: 30%;
+    height: 465px;
+    min-width: 320px;
+    margin-bottom: 20px;
+    transition: all 0.6s;
+    transform: translate(0%, 0);
   }
 
   .works-body h3 {
@@ -689,10 +730,20 @@ footer {
     font-size: 17px;
     line-height: 1.6rem;
     color: #fff;
+    transition: all 0.5s;
+  }
+
+  .works-body:hover {
+    border: solid 2px #1c1a19;
+    cursor: pointer;
+    padding: 10px;
+    transform: scale(1.05, 1.05);
+    z-index: 9;
   }
 
   .box-body {
     min-width: 245px;
+    margin-bottom: 10px;
   }
 
   .about .about-head p {
@@ -703,31 +754,31 @@ footer {
     min-width: 370px;
   }
 
-  .about-head .see-btn {
+  .get-my-resume-btn {
     top: 30px;
     width: 15%;
     font-weight: 700;
     min-width: 150px;
   }
 
-  .skills ul {
-    align-items: flex-start;
+  .get-my-resume-btn:hover {
+    transform: scale(1.2, 1.2);
+    transition: all 0.4s ease-in;
   }
 
-  .works-body .see-btn {
-    padding: 20px 15px;
-    background-color: transparent;
-    color: transparent;
-    margin: 0 0 -20px 0;
-    position: absolute;
-    left: 0%;
-    width: 100%;
-    bottom: 20px;
+  .skills ul {
+    align-items: flex-start;
   }
 
   .works-body:hover .see-btn {
     background-color: #ff6b00;
     color: #fff;
+  }
+
+  .works-body:hover .box-body li p {
+    color: transparent;
+    border: none;
+    background-color: transparent;
   }
 
   .works-body .see-btn:hover {
@@ -741,59 +792,17 @@ footer {
     color: transparent;
   }
 
-  .works-body:hover {
-    border: solid 2px #1c1a19;
-    cursor: pointer;
-    padding: 10px;
-  }
-
   .works-body .see-btn:active {
     background-color: #e05304;
     color: #f4f1f0;
-  }
-
-  #works-body-2,
-  #works-body-5 {
-    background-image: url(../images/second.png);
-  }
-
-  #works-body-3,
-  #works-body-6 {
-    background-image: url(../images/third.png);
-  }
-
-  #works-body-4 {
-    background-image: url(../images/fourth.png);
-  }
-
-  #works-body-3 ul,
-  #works-body-6 ul {
-    margin-bottom: -10px;
   }
 
   .small-data {
     display: none;
   }
 
-  #works-body-first,
-  #works-body-4 {
-    margin-left: 10%;
-  }
-
-  @media only screen and (max-width: 1075px) {
-    #works-body-3,
-    #works-body-first,
-    #works-body-5 {
-      margin-left: 10%;
-    }
-
-    #works-body-4 {
-      margin-left: 0.8%;
-    }
-  }
-
   .about {
-    margin-top: 1100px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     height: 1400px;
@@ -865,4 +874,215 @@ footer {
     margin: 0;
     padding: 0;
   }
+}
+
+/* pop up styles, mobile */
+
+.popup-container {
+  position: fixed;
+  z-index: 11;
+  width: 100vw;
+  height: 100vh;
+  background-color: #232c3ca9;
+  backdrop-filter: blur(5px);
+}
+
+.cardPopup {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 90%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  padding-bottom: 30px;
+  color: #172b4d;
+  border-radius: 3rem 0.5rem 3rem 0.5rem;
+}
+
+.cardPopup .popup-header {
+  margin: 20px;
+  max-width: 80%;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: 'Crete Round', serif;
+}
+
+.popup-header .popup-skills {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  min-width: 260px;
+  list-style: none;
+  width: 50%;
+}
+
+.popup-header .popup-skills li {
+  padding: 4px;
+  border: solid 2px #dfe1e6;
+  font-size: 0.9rem;
+  color: #172b4d;
+  margin-top: 10px;
+  border-radius: 0.4rem;
+}
+
+.cardPopup .image-project {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  min-width: 250px;
+  margin: 0 auto;
+  border-radius: 0.7rem;
+  box-shadow:
+    -7.3px -1.4px 7.1px rgba(0, 0, 0, 0.026),
+    -14.4px -2.8px 14.6px rgba(0, 0, 0, 0.042),
+    -21px -4px 23.4px rgba(0, 0, 0, 0.053),
+    -26.4px -5.1px 36px rgba(0, 0, 0, 0.061),
+    -27.7px -5.3px 59.6px rgba(0, 0, 0, 0.07),
+    52px 10px 106px rgba(0, 0, 0, 0.08);
+}
+
+.cardPopup .popup-description {
+  position: relative;
+  top: 20px;
+  text-align: left;
+  line-height: 1.2rem;
+  margin: 20px auto;
+  width: 85%;
+}
+
+.popup-description button {
+  border-radius: 0.4rem;
+}
+
+.cardPopup .close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  width: 20px;
+}
+
+.cardPopup button {
+  background-color: #f55800;
+  border: none;
+  padding: 10px 10px 10px 10px;
+  margin: 20px 0 0 10px;
+  color: #fff;
+  display: inline-flex;
+  justify-content: space-around;
+  width: 45%;
+  min-width: 115px;
+  font-size: 1rem;
+  height: 40px;
+}
+
+/* pop up desktop */
+
+@media only screen and (min-width: 768px) {
+  .cardPopup {
+    display: grid;
+    grid-template-columns: repeat(6 1fr);
+    grid-template-rows: repeat(4 1fr);
+    width: 80%;
+    min-height: 530px;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .cardPopup .popup-header {
+    grid-area: 1 / 1 / 2 / 7;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .popup-header .popup-skills {
+    justify-content: space-around;
+    width: 35%;
+    min-width: 330px;
+    margin-top: 0;
+  }
+
+  .popup-header .popup-skills li {
+    padding: 10px;
+    border: solid 2px #dfe1e6;
+    font-size: 1rem;
+  }
+
+  .cardPopup .image-project {
+    grid-area: 2 / 1 / 5 / 6;
+    max-width: 750px;
+    min-width: 300px;
+    margin: 0 auto;
+  }
+
+  .cardPopup .popup-description {
+    grid-area: 2 / 6 / 5 / 7;
+    width: 85%;
+    margin: -20px 0  10px 30px;
+    line-height: 1.5rem;
+  }
+
+  .cardPopup p {
+    font-size: 1rem;
+  }
+
+  .cardPopup button {
+    margin: 20% 0 10px 10px;
+    color: #fff;
+    display: inline-flex;
+    justify-content: space-around;
+    width: 45%;
+    min-width: 120px;
+    max-width: 200px;
+    font-size: 1rem;
+  }
+
+  .cardPopup .close:hover {
+    cursor: pointer;
+    transform: scale(3, 3);
+    background-color: #e5eaf251;
+    border: solid 1px gainsboro;
+    border-radius: 1rem;
+    transition: all 0.4s;
+  }
+
+  .cardPopup button:hover {
+    cursor: pointer;
+    color: #f55800;
+    font-weight: bold;
+    background-color: #fff5e1;
+    border: solid 1px #f55800;
+    transform: scale(1.2, 1.2);
+    transition: all 0.6s;
+  }
+}
+
+/* validation message */
+
+.triangle {
+  border: solid 1px #9e9696;
+  background-color: #ffc4c4;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 4px;
+  left: 15px;
+  transform: rotate(45deg);
+}
+
+.message span {
+  border: solid 1px #9e9696;
+  padding: 8px;
+  font-size: 0.8rem;
+  border-radius: 0.3rem;
+  background-color: #ffc4c4;
+  box-shadow: 6.6px 10.8px 10px rgba(0, 0, 0, 0.125), 53px 86px 80px rgba(0, 0, 0, 0.25);
+}
+
+.message {
+  position: absolute;
 }
